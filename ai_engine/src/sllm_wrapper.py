@@ -7,19 +7,42 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import settings
 
 
+# class SLLMWrapper:
+#     def __init__(self):
+#         print(f"Loading SLLM ({settings.SLLM_MODEL_ID})... This may take a moment.")
+#         self.device = settings.DEVICE
+
+#         # RTX 3060 메모리 효율을 위해 fp16 사용
+#         self.tokenizer = AutoTokenizer.from_pretrained(settings.SLLM_MODEL_ID)
+#         self.model = AutoModelForCausalLM.from_pretrained(
+#             settings.SLLM_MODEL_ID,
+#             torch_dtype=torch.float16,
+#             device_map=self.device
+#         )
+# ============================================
 class SLLMWrapper:
     def __init__(self):
-        print(f"Loading SLLM ({settings.SLLM_MODEL_ID})... This may take a moment.")
-        self.device = settings.DEVICE
-
-        # RTX 3060 메모리 효율을 위해 fp16 사용
-        self.tokenizer = AutoTokenizer.from_pretrained(settings.SLLM_MODEL_ID)
+        # 논문에서 사용한 Mistral-7B (메모리 문제로 4비트 로드 권장)
+        # 만약 기존 Qwen을 계속 쓰시려면 settings.py의 모델 ID만 유지하면 됩니다.
+        model_id = "mistralai/Mistral-7B-Instruct-v0.3" 
+        
+        print(f"Loading LLM: {model_id}")
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id)
+        
+        # 4비트 양자화 로드 (RTX 3060 최적화)
+        from transformers import BitsAndBytesConfig
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16
+        )
+        
         self.model = AutoModelForCausalLM.from_pretrained(
-            settings.SLLM_MODEL_ID,
-            torch_dtype=torch.float16,
-            device_map=self.device
+            model_id,
+            quantization_config=bnb_config,
+            device_map="auto"
         )
 
+# ============================================
     def generate_response(self, query):
         """
         반도체 패키징 전문가 페르소나를 주입하여 답변 생성

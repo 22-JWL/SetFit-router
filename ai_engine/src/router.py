@@ -1,49 +1,62 @@
 import torch
 import torch.nn.functional as F
 from collections import Counter
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from setfit import SetFitModel # [중요] SetFitModel import 확인
 import sys
 import os
 
-# 상위 폴더 경로 추가 (설정 파일 import용)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import settings
-
 
 class UncertaintyRouter:
     def __init__(self, model_path=None):
         self.device = settings.DEVICE
-
-        # 학습된 모델이 없으면 베이스 모델 로드 (최초 실행 시)
+        
         path = model_path if model_path else settings.ROUTER_BASE_MODEL
-        print(f"Loading Router Model from: {path}")
-
-        self.tokenizer = AutoTokenizer.from_pretrained(path)
-        self.model = AutoModelForSequenceClassification.from_pretrained(
-            path,
-            num_labels=len(settings.ID2LABEL)
-        ).to(self.device)
+        print(f"Loading Router Model (SetFit) from: {path}")
+        
+        # SetFit 모델 로드
+        # 저장된 모델을 로드할 때는 자동으로 config를 읽어오므로 
+        # use_differentiable_head=True가 적용된 상태로 로드됩니다.
+        self.model = SetFitModel.from_pretrained(path).to(self.device)
 
     def predict_mc_dropout(self, text):
         """
         논문의 MC Sampling 로직 [cite: 122, 388]
         모델을 train 모드로 두어 Dropout을 켠 상태로 여러 번 추론합니다.
         """
-        inputs = self.tokenizer(text, return_tensors="pt", truncation=True, padding=True).to(self.device)
+        """
+        SetFit 모델에 대한 MC Dropout 구현.
+        SetFit은 (Embedding Body) + (Classification Head)로 구성됩니다.
+        Head 부분의 Dropout을 활성화하여 추론합니다.
+        """
+        # 1. 먼저 임베딩을 생성합니다 (Body는 고정)
+        embeddings = self.model.model_body.encode([text], convert_to_tensor=True, device=self.device)
 
         # [핵심] Dropout 활성화를 위해 train 모드로 전환
-        self.model.train()
+        # 2. Classification Head를 Train 모드로 전환 (Dropout 활성화)
+        self.model.model_head.train()
 
         predictions = []
         with torch.no_grad():
             for _ in range(settings.MC_SAMPLES):
-                outputs = self.model(**inputs)
-                probs = F.softmax(outputs.logits, dim=-1)
+                # Head 통과
+                outputs = self.model.model_head(embeddings)
+                
+                # [수정된 부분] 튜플이면 첫 번째 요소(logits)만 추출
+                if isinstance(outputs, tuple):
+                    logits = outputs[0]
+                else:
+                    logits = outputs
+                
+                # Softmax 계산
+                probs = torch.softmax(logits, dim=-1)
                 pred_label = torch.argmax(probs, dim=-1).item()
                 predictions.append(pred_label)
 
         # 추론 후 다시 eval 모드로 복귀
-        self.model.eval()
+        # Eval 모드 복귀
+        self.model.model_head.eval()
 
         return predictions
 
