@@ -31,14 +31,22 @@ class HybridSystem:
         source = ""
 
         # Step 2: 라우팅 결정 [cite: 121]
-        # Case A: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
-        if routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
+        # Case 1: OOS (도메인 밖) -> 즉시 거절
+        if routing_result["final_label_id"] == 3:
+             source = "Router (Blocked OOS)"
+             print(f"🛑 Blocked OOS query... ({source})")
+             final_response = {
+                 "answer": "죄송합니다. 저는 반도체 패키징 전문가라 그 질문에는 답할 수 없습니다.",
+                 "intent": "OUT_OF_SCOPE"
+             }
+        # Case 2: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
+        elif routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
             source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
             print(f"🚀 Routing to SLLM... ({source})")
             answer = self.sllm.generate_response(query)
             final_response = {"answer": answer, "intent": routing_result["final_label"]}
 
-        # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
+        # Case 3: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리, 로컬 DB/규정집 검색
         else:
             source = "Router/DB (Reason: Certain & Simple)"
             print(f"✅ Handling locally... ({source})")
