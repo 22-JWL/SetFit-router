@@ -5,11 +5,16 @@ import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.router import UncertaintyRouter
 from src.sllm_wrapper import SLLMWrapper
+from src.csv_handler import CSVHandler
 from config import settings
 
 
 class HybridSystem:
     def __init__(self):
+
+        # 0. CSV 핸들러 (Rule-based)
+        self.csv_handler = CSVHandler()
+
         # 1. 라우터 로드 (학습된 모델이 있으면 그것을 로드)
         if os.path.exists(settings.ROUTER_MODEL_PATH):
             self.router = UncertaintyRouter(settings.ROUTER_MODEL_PATH)
@@ -30,8 +35,6 @@ class HybridSystem:
         final_response = {}
         source = ""
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         # 기본값 초기화 (에러 방지용)
         final_response = {
             "answer": "죄송합니다. 처리 중 오류가 발생했습니다.",
@@ -50,24 +53,10 @@ class HybridSystem:
                 "intent": "API_EXECUTION"
             }
             uncertainty_score = 0.0 # 100% 확실
-=======
-        # Step 2: 라우팅 결정 [cite: 121]
-        # Case A: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
-        if routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
-            source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
-            print(f"🚀 Routing to SLLM... ({source})")
-            answer = self.sllm.generate_response(query)
-            final_response = {"answer": answer, "intent": routing_result["final_label"]}
-
         # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
-<<<<<<< HEAD
->>>>>>> parent of b957b49 (feat : OOS (도메인 밖) -> 즉시 거절 로직 추가)
-=======
->>>>>>> parent of b957b49 (feat : OOS (도메인 밖) -> 즉시 거절 로직 추가)
-=======
         # Step 2: 라우팅 결정 [cite: 121]
         # Case 1: OOS (도메인 밖) -> 즉시 거절
-        if routing_result["final_label_id"] == 3:
+        if routing_result["final_label_id"] == 2:
              source = "Router (Blocked OOS)"
              print(f"🛑 Blocked OOS query... ({source})")
              final_response = {
@@ -75,20 +64,20 @@ class HybridSystem:
                  "intent": "OUT_OF_SCOPE"
              }
         # Case 2: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
-        elif routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
+        else:
+            # routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
             source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
             print(f"🚀 Routing to SLLM... ({source})")
             answer = self.sllm.generate_response(query)
             final_response = {"answer": answer, "intent": routing_result["final_label"]}
 
         # Case 3: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리, 로컬 DB/규정집 검색
->>>>>>> parent of 06e1c9d (feat : csv 이용 데이터 증강)
-        else:
-            source = "Router/DB (Reason: Certain & Simple)"
-            print(f"✅ Handling locally... ({source})")
-            # 실제로는 여기서 SQL DB나 미리 정의된 매뉴얼을 조회합니다.
-            dummy_db_answer = f"[DB 검색 결과] '{query}'에 대한 스펙/절차 정보를 표시합니다."
-            final_response = {"answer": dummy_db_answer, "intent": routing_result["final_label"]}
+        # else:
+        #     source = "Router/DB (Reason: Certain & Simple)"
+        #     print(f"✅ Handling locally... ({source})")
+        #     # 실제로는 여기서 SQL DB나 미리 정의된 매뉴얼을 조회합니다.
+        #     dummy_db_answer = f"[DB 검색 결과] '{query}'에 대한 스펙/절차 정보를 표시합니다."
+        #     final_response = {"answer": dummy_db_answer, "intent": routing_result["final_label"]}
 
         latency = time.time() - start_time
 

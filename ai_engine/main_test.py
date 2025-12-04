@@ -6,9 +6,9 @@ def main():
     system = HybridSystem()
 
     test_queries = [
-        "What is the melting point of SAC305?",  # 단순 (Router 예상)
-        "Why is there a void in the underfill process?",  # 복합 (SLLM 예상)
-        "Tell me about the weather today.",  # OOS (Router가 OOS 혹은 불확실로 잡음)
+        "BGA 티칭 창 열어줘",  # 단순 (Router 예상)
+        "코너 각도 2.5로 만드러",  # 복합 (SLLM 예상)
+        "오늘 날씨 어때?",  # OOS (Router가 OOS 혹은 불확실로 잡음)
     ]
 
     print("\n>>> Starting Test Loop\n")
