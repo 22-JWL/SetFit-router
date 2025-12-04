@@ -122,11 +122,19 @@ def main():
         ("오늘 날씨 어때?", 2),
         ("미국 대통령이 누구야?", 2),
         ("할 수 있는게 뭐야?", 2),
+        ("가장 맛있는 과자는?", 2),
+        ("오늘의 기온은?", 2),
+        ("오징어 먹고싶다", 2),
+        ("점심 뭐 먹을까?", 2),
+        ("잠을 잘 자는 법?", 2),
+        ("커피 빨러 갈까?", 2),
+        ("심심해", 2),
+
     ]
 
-    raw_data += (single_data * AMPLIFICATION_FACTOR)
+    # raw_data += (single_data * AMPLIFICATION_FACTOR)
     raw_data += (composite_data * AMPLIFICATION_FACTOR)
-    raw_data += (basic_data * AMPLIFICATION_FACTOR) # 기본 데이터도 증폭
+    # raw_data += (basic_data * 100) # 기본 데이터도 증폭
 
     print(f">>> Total examples after amplification: {len(raw_data)}")
 

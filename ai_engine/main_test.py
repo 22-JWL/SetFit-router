@@ -1,15 +1,75 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+import pandas as pd 
+from config import settings
 from src.hybrid_system import HybridSystem
 
 
+def load_csv_data(file_path):
+    """
+    CSV 파일을 읽어 B열(2번째 컬럼)의 데이터를 지정된 라벨로 로드합니다.
+    """
+    data_list = []
+    if not os.path.exists(file_path):
+        print(f"[Warning] Training file not found: {file_path}")
+        return data_list
+
+    try:
+        # 인코딩 자동 감지 (UTF-8 -> CP949)
+        try:
+            df = pd.read_csv(file_path, encoding='utf-8')
+        except UnicodeDecodeError:
+            df = pd.read_csv(file_path, encoding='cp949')
+        
+        # B열 데이터 추출 (인덱스 1)
+        count = 0
+        for _, row in df.iterrows():
+            if len(row) >= 2 and pd.notna(row.iloc[1]):
+                text = str(row.iloc[1]).strip()
+                if text:
+                    data_list.append((text))
+                    count += 1
+        
+        print(f">>> Loaded {count} examples for from {os.path.basename(file_path)}")
+        
+    except Exception as e:
+        print(f"[Error] Failed to load {file_path}: {e}")
+        
+    return data_list
+
 def main():
     print(">>> Initializing Hybrid SLLM System...")
+    base_data_path = os.path.join(settings.BASE_DIR, "data", "raw")
+    single_csv_path = os.path.join(base_data_path, "single.csv")
+    composite_csv_path = os.path.join(base_data_path, "composite.csv")
+
+
     system = HybridSystem()
 
+    single_data = load_csv_data(single_csv_path)
+    composite_data = load_csv_data(composite_csv_path)
+
     test_queries = [
-        "BGA 티칭 창 열어줘",  # 단순 (Router 예상)
+        "BGA 티칭 창 열어",  # 단순 (Router 예상)
         "코너 각도 2.5로 만드러",  # 복합 (SLLM 예상)
         "오늘 날씨 어때?",  # OOS (Router가 OOS 혹은 불확실로 잡음)
+        "미국 대통령이 누구야?",
+        "할 수 있는게 뭐야?",
+        "가장 맛있는 과자는?",
+        "오늘의 기온은?",
+        "오징어 먹고싶다",
+        "점심 뭐 먹을까?",
+        "잠을 잘 자는 법?",
+        "커피 빨러 갈까?",
+        "심심해",
+        "히스토리 창 열어"
     ]
+
+    test_queries += single_data
+    test_queries += composite_data
+
+    print(f"\n>>> 총 테스트할 문장 개수: {len(test_queries)}")
+    print(f">>> composite 데이터 샘플 확인 (마지막 3개): {test_queries[-3:]}")
 
     print("\n>>> Starting Test Loop\n")
     for q in test_queries:

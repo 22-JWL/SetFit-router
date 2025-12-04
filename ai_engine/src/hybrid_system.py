@@ -3,10 +3,15 @@ import os
 import time
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.router import UncertaintyRouter
-from src.sllm_wrapper import SLLMWrapper
-from src.csv_handler import CSVHandler
-from config import settings
+# 필요한 모듈 임포트
+try:
+    from src.router import UncertaintyRouter
+    from src.sllm_wrapper import SLLMWrapper
+    from src.csv_handler import CSVHandler
+    from config import settings
+except ImportError:
+    # 테스트 환경 등에서 경로 문제 발생 시 예외 처리
+    pass
 
 
 class HybridSystem:
@@ -28,31 +33,41 @@ class HybridSystem:
     def process_query(self, query):
         start_time = time.time()
 
-        # Step 1: 라우터로 불확실성 체크 (MC Dropout)
-        mc_preds = self.router.predict_mc_dropout(query)
-        routing_result = self.router.check_uncertainty(mc_preds)
-
-        final_response = {}
-        source = ""
-
         # 기본값 초기화 (에러 방지용)
         final_response = {
             "answer": "죄송합니다. 처리 중 오류가 발생했습니다.",
             "intent": "ERROR"
         }
+        source = ""
         uncertainty_score = 0.0
+
+        # # Step 1: 라우터로 불확실성 체크 (MC Dropout)
+        # mc_preds = self.router.predict_mc_dropout(query)
+        # routing_result = self.router.check_uncertainty(mc_preds)
+
+        # final_response = {}
+        
+
+        
 
         # === [Step 0] CSV 규칙 매칭 (최우선 순위) ===
         csv_result = self.csv_handler.check_and_execute(query)
 
         if csv_result:
-            # CSV 규칙에 걸리면 바로 리턴 (SLLM/Router 생략)
-            source = "CSV Rule (External API)"
-            final_response = {
-                "answer": csv_result,
-                "intent": "API_EXECUTION"
+            # CSV 규칙에 걸리면 바로 리턴 (SLLM/Router 생략 -> Latency 대폭 감소)
+            latency = time.time() - start_time
+            return {
+                "query": query,
+                "response": csv_result,
+                "detected_intent": "API_EXECUTION",
+                "routing_source": "CSV Rule (External API)",
+                "uncertainty_score": 0.0, # 100% 확실
+                "latency": f"{latency:.4f}s"
             }
-            uncertainty_score = 0.0 # 100% 확실
+        # CSV에 없을 때만 실행
+        mc_preds = self.router.predict_mc_dropout(query)
+        routing_result = self.router.check_uncertainty(mc_preds)
+        
         # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
         # Step 2: 라우팅 결정 [cite: 121]
         # Case 1: OOS (도메인 밖) -> 즉시 거절
@@ -65,11 +80,11 @@ class HybridSystem:
              }
         # Case 2: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
         else:
-            # routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
+            #routing_result["is_uncertain"] or routing_result["final_label_id"] == 1:
             source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
             print(f"🚀 Routing to SLLM... ({source})")
-            answer = self.sllm.generate_response(query)
-            final_response = {"answer": answer, "intent": routing_result["final_label"]}
+            # answer = self.sllm.generate_response(query)
+            final_response = {"answer": "LLM으로 넘어가서 분석", "intent": routing_result["final_label"]}
 
         # Case 3: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리, 로컬 DB/규정집 검색
         # else:
