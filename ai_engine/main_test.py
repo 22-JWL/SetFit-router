@@ -6,8 +6,8 @@ def main():
     system = HybridSystem()
 
     test_queries = [
-        "BGA 티칭 창 열어",  # 단순 (Router 예상)
-        "코너 각도 2.5",  # 복합 (SLLM 예상)
+        "What is the melting point of SAC305?",  # 단순 (Router 예상)
+        "Why is there a void in the underfill process?",  # 복합 (SLLM 예상)
         "Tell me about the weather today.",  # OOS (Router가 OOS 혹은 불확실로 잡음)
     ]
 
