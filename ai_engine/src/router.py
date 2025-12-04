@@ -22,55 +22,72 @@ class UncertaintyRouter:
 
     def predict_mc_dropout(self, text):
         """
-        논문의 MC Sampling 로직 [cite: 122, 388]
-        모델을 train 모드로 두어 Dropout을 켠 상태로 여러 번 추론합니다.
+        [수정됨] 논문 방식의 MC Dropout 구현
+        - 논문: "dropout across hidden and attention layers in the backbone"
+        - 핵심: Backbone(Body)을 Train 모드로 두고 매번 임베딩을 다시 계산해야 함.
         """
         """
         SetFit 모델에 대한 MC Dropout 구현.
         SetFit은 (Embedding Body) + (Classification Head)로 구성됩니다.
         Head 부분의 Dropout을 활성화하여 추론합니다.
         """
-        # 1. 먼저 임베딩을 생성합니다 (Body는 고정)
-        embeddings = self.model.model_body.encode([text], convert_to_tensor=True, device=self.device)
+        # 1. 텍스트 토큰화 (한 번만 수행)
+        inputs = self.model.model_body.tokenizer(
+            [text], 
+            padding=True, 
+            truncation=True, 
+            return_tensors="pt"
+        ).to(self.device)
 
-        # [핵심] Dropout 활성화를 위해 train 모드로 전환
-        # 2. Classification Head를 Train 모드로 전환 (Dropout 활성화)
+        # [핵심 1] Body와 Head 모두 Train 모드로 전환 (Dropout 활성화)
+        # SentenceTransformer의 encode() 메서드는 내부적으로 eval()을 강제할 수 있으므로
+        # forward()를 직접 호출하거나 모드를 수동으로 제어해야 합니다.
+        self.model.model_body.train() 
         self.model.model_head.train()
 
         predictions = []
+        
+        # [핵심 2] Gradients는 계산하지 않되(No update), Dropout은 켜둔 상태로 루프
         with torch.no_grad():
             for _ in range(settings.MC_SAMPLES):
-                # Head 통과
+                # A. Body 통과 (매번 다른 Dropout 마스크 적용됨 -> 다른 임베딩 생성)
+                # SentenceTransformer 모델의 forward 호출
+                features = self.model.model_body(inputs) 
+                embeddings = features['sentence_embedding']
+
+                # B. Head 통과
                 outputs = self.model.model_head(embeddings)
                 
-                # [수정된 부분] 튜플이면 첫 번째 요소(logits)만 추출
+                # 튜플 처리
                 if isinstance(outputs, tuple):
                     logits = outputs[0]
                 else:
                     logits = outputs
                 
-                # Softmax 계산
+                # C. 결과 저장
                 probs = torch.softmax(logits, dim=-1)
                 pred_label = torch.argmax(probs, dim=-1).item()
                 predictions.append(pred_label)
 
-        # 추론 후 다시 eval 모드로 복귀
-        # Eval 모드 복귀
+        # 3. 추론 후 안전하게 Eval 모드로 복귀
+        self.model.model_body.eval()
         self.model.model_head.eval()
 
         return predictions
 
     def check_uncertainty(self, predictions):
         """
-        불확실성 판단 [cite: 129, 390]
-        예측값들의 분산(여기서는 빈도)을 보고 결정합니다.
+        불확실성 판단 (논문과 동일)
         """
         counts = Counter(predictions)
+        # 가장 많이 예측된 라벨 찾기
+        if not counts:
+             return {"is_uncertain": True, "final_label": None}
+             
         most_common_label, frequency = counts.most_common(1)[0]
-
         agreement_ratio = frequency / len(predictions)
 
-        # 논문: 예측이 갈리면(variance가 크면) 불확실함
+        # 설정된 임계값보다 일치율이 낮으면 '불확실'로 판단 (LLM으로 라우팅)
         is_uncertain = agreement_ratio < settings.CONFIDENCE_THRESHOLD
 
         return {
