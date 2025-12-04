@@ -2,9 +2,14 @@ from pydoc import text
 import sys
 import os
 from setfit import SetFitModel, Trainer, TrainingArguments
+from keybert import KeyBERT
 from datasets import Dataset
 import pandas as pd
 import random
+
+# KeyBERT 모델 로드 (전역 변수 혹은 클래스로 한 번만 로드하는 것이 좋습니다)
+# 가벼운 모델을 원하면 'paraphrase-multilingual-MiniLM-L12-v2' 사용
+kw_model = KeyBERT(model='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import settings
@@ -46,21 +51,44 @@ def load_csv_data(file_path, label_id):
     return data_list
 
 
-def generate_negative_augmentation(text):
+def generate_negative_augmentation_with_keybert(text):
     """
     논문의 Negative Data Augmentation
     키워드를 삭제하거나 랜덤 문자열로 대체하여 OOS 데이터 생성
     """
-    """논문의 Negative Data Augmentation 구현 [cite: 112]"""
+    """
+    KeyBERT를 사용하여 핵심 키워드를 추출하고 변형하는 정석 구현
+    """
     words = text.split()
     if len(words) < 2: return text
-    idx = random.randint(0, len(words)-1)
-    # 50% 확률로 단어 삭제, 50% 확률로 랜덤 마스킹
-    # 논문 방식: (a) 단어 제거 또는 (b) 랜덤 문자열로 대체 [cite: 112]
+    
+    # 1. 키워드 추출 (상위 1개)
+    # 한국어의 경우 형태소 분석기를 쓰지 않으면 조사가 붙어 나올 수 있지만, 
+    # OOS 생성용으로는 단순 split 매칭도 충분히 효과적입니다.
+    keywords = kw_model.extract_keywords(text, keyphrase_ngram_range=(1, 1), stop_words=None, top_n=1)
+    
+    target_idx = -1
+
+
+    # 키워드가 추출되었고, 그 키워드가 문장 내에 존재한다면 인덱스 찾기
+    if keywords:
+        keyword = keywords[0][0]  # ('word', score) 튜플에서 단어만 추출
+        for i, word in enumerate(words):
+            # 단순 포함 관계 확인 (조사 등 고려)
+            if keyword in word:
+                target_idx = i
+                break
+
+    # 키워드를 못 찾았으면 기존처럼 랜덤 선택 (Fallback)
+    if target_idx == -1:
+        target_idx = random.randint(0, len(words)-1)
+
+    # 2. 변형 적용 (삭제 or 대체)
     if random.random() > 0.5:
-        words.pop(idx)# 단어 삭제
+        words.pop(target_idx) # 키워드 삭제
     else:
-        words[idx] = "XZY_UNK"# 랜덤 문자열로 대체
+        words[target_idx] = "XZY_UNK" # 키워드를 랜덤 문자열로 대체
+
     return " ".join(words)
 
 
@@ -109,7 +137,7 @@ def main():
         aug_data.append({"text": text, "label": label})
         # OOS 데이터 증강 (기존 문장 망가뜨리기 -> 라벨 2(OOS) 부여)
         if random.random() > 0.7:  # 30% 비율로 생성
-            aug_text = generate_negative_augmentation(text)
+            aug_text = generate_negative_augmentation_with_keybert(text)
             aug_data.append({"text": aug_text, "label": 2})  # 강제로 OOS 라벨 부여
 
     df = pd.DataFrame(aug_data)
