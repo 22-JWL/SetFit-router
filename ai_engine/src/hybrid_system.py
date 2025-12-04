@@ -28,6 +28,7 @@ class HybridSystem:
         start_time = time.time()
         source = ""
 
+<<<<<<< HEAD
         # 기본값 초기화 (에러 방지용)
         final_response = {
             "answer": "죄송합니다. 처리 중 오류가 발생했습니다.",
@@ -46,6 +47,17 @@ class HybridSystem:
                 "intent": "API_EXECUTION"
             }
             uncertainty_score = 0.0 # 100% 확실
+=======
+        # Step 2: 라우팅 결정 [cite: 121]
+        # Case A: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
+        if routing_result["is_uncertain"] or routing_result["final_label_id"] == 2:
+            source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
+            print(f"🚀 Routing to SLLM... ({source})")
+            answer = self.sllm.generate_response(query)
+            final_response = {"answer": answer, "intent": routing_result["final_label"]}
+
+        # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
+>>>>>>> parent of b957b49 (feat : OOS (도메인 밖) -> 즉시 거절 로직 추가)
         else:
             # === [Step 1] 기존 라우터 & SLLM 로직 ===
             # (CSV에 없으면 AI 엔진 가동)
