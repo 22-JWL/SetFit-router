@@ -57,6 +57,9 @@ class HybridSystem:
             final_response = {"answer": answer, "intent": routing_result["final_label"]}
 
         # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
+<<<<<<< HEAD
+>>>>>>> parent of b957b49 (feat : OOS (도메인 밖) -> 즉시 거절 로직 추가)
+=======
 >>>>>>> parent of b957b49 (feat : OOS (도메인 밖) -> 즉시 거절 로직 추가)
         else:
             # === [Step 1] 기존 라우터 & SLLM 로직 ===
