@@ -67,9 +67,8 @@ class HybridSystem:
         # CSV에 없을 때만 실행
         mc_preds = self.router.predict_mc_dropout(query)
         routing_result = self.router.check_uncertainty(mc_preds)
-        
-        # Case B: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리
-        # Step 2: 라우팅 결정 [cite: 121]
+
+
         # Case 1: OOS (도메인 밖) -> 즉시 거절
         if routing_result["final_label_id"] == 2:
              source = "Router (Blocked OOS)"

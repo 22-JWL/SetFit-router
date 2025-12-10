@@ -7,7 +7,7 @@ from datasets import Dataset
 import pandas as pd
 import random
 
-# KeyBERT 모델 로드 (전역 변수 혹은 클래스로 한 번만 로드하는 것이 좋습니다)
+# KeyBERT 모델 로드
 # 가벼운 모델을 원하면 'paraphrase-multilingual-MiniLM-L12-v2' 사용
 kw_model = KeyBERT(model='sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
 
@@ -20,7 +20,7 @@ AMPLIFICATION_FACTOR = 20  # 데이터를 20배로 뻥튀기
 
 def load_csv_data(file_path, label_id):
     """
-    CSV 파일을 읽어 B열(2번째 컬럼)의 데이터를 지정된 라벨로 로드합니다.
+    CSV 파일을 읽어 B열(2번째 컬럼)의 데이터를 지정된 라벨로 로드
     """
     data_list = []
     if not os.path.exists(file_path):
@@ -64,7 +64,10 @@ def generate_negative_augmentation_with_keybert(text):
     
     # 1. 키워드 추출 (상위 1개)
     # 한국어의 경우 형태소 분석기를 쓰지 않으면 조사가 붙어 나올 수 있지만, 
-    # OOS 생성용으로는 단순 split 매칭도 충분히 효과적입니다.
+    # OOS 생성용으로는 단순 split 매칭도 충분히 효과적.
+    # keyphrase_ngram_range=(1, 1): 추출할 키워드의 길이를 지정합니다. (1, 1)은 한 단어짜리 키워드(unigram)만 추출하라
+   # stop_words=None: 불용어(stop words, 예를 들어 "은", "는", "이", "가"와 같은 의미 없는 단어)를 필터링하지 않겠다.
+   # top_n=1: 추출된 키워드 중에서 가장 점수가 높은(가장 관련성 높은) 키워드를 1개만 반환하라.
     keywords = kw_model.extract_keywords(text, keyphrase_ngram_range=(1, 1), stop_words=None, top_n=1)
     
     target_idx = -1
@@ -98,7 +101,7 @@ def main():
     # 1. 학습 데이터 (반도체 패키징 예시)
     
     # === 1. CSV 파일 경로 정의 ===
-    # ai_engine/data/raw 폴더 안에 있다고 가정
+    # ai_engine/data/raw 폴더 내의 CSV 파일들
     base_data_path = os.path.join(settings.BASE_DIR, "data", "raw")
     single_csv_path = os.path.join(base_data_path, "single.csv")
     composite_csv_path = os.path.join(base_data_path, "composite.csv")
@@ -107,10 +110,10 @@ def main():
     raw_data = []
 
 # === 2. CSV 데이터 로드 ===
-    # [요청사항] single.csv (B열) -> Label 0 (FACTUAL_SPEC)
+    # single.csv (B열) -> Label 0 (FACTUAL_SPEC)
     single_data = load_csv_data(single_csv_path, 0)     # Label 0
 
-    # [요청사항] composite.csv (B열) -> Label 1 (COMPLEX_ANALYSIS)
+    # composite.csv (B열) -> Label 1 (COMPLEX_ANALYSIS)
     composite_data = load_csv_data(composite_csv_path, 1) # Label 1
 
 # === 3. 부족한 라벨 보강 (Label 1 & 기본 데이터) ===
@@ -156,7 +159,7 @@ def main():
 
     print(f">>> Dataset Features: {train_dataset.features}") # 디버깅용 출력
 
-    # SetFit 모델 로드 (MPNet 백본) [cite: 108, 139]
+    # SetFit 모델 로드 (MPNet 백본)
     print(f">>> Loading SetFit Model: {settings.ROUTER_BASE_MODEL}")
     model = SetFitModel.from_pretrained(
         settings.ROUTER_BASE_MODEL,

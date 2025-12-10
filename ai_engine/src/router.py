@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 from collections import Counter
-from setfit import SetFitModel # [중요] SetFitModel import 확인
+from setfit import SetFitModel # SetFitModel import 확인
 import sys
 import os
 
@@ -47,7 +47,7 @@ class UncertaintyRouter:
 
         predictions = []
         
-        # [핵심 2] Gradients는 계산하지 않되(No update), Dropout은 켜둔 상태로 루프
+        # Gradients는 계산하지 않되(No update), Dropout은 켜둔 상태로 루프
         with torch.no_grad():
             for _ in range(settings.MC_SAMPLES):
                 # A. Body 통과 (매번 다른 Dropout 마스크 적용됨 -> 다른 임베딩 생성)
@@ -77,7 +77,7 @@ class UncertaintyRouter:
 
     def check_uncertainty(self, predictions):
         """
-        불확실성 판단 (논문과 동일)
+        불확실성 판단 (논문 참고)
         """
         counts = Counter(predictions)
         # 가장 많이 예측된 라벨 찾기

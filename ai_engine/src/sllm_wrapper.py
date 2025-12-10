@@ -49,7 +49,7 @@ class SLLMWrapper:
         """
         messages = [
             {"role": "system",
-             "content": "너는 반도체 공정 비전 검사 시스템의 AI assistant야. 사용자가 말로 명령을 내리면 그에 맞게 url로만 답변해줘."},
+             "content": "너는 반도체 공정 비전 검사 시스템의 AI assistant야. 사용자가 말로 명령을 내리면 그에 맞게 답변해줘."},
             {"role": "user", "content": query}
         ]
 

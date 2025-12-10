@@ -9,8 +9,8 @@ ROUTER_MODEL_PATH = os.path.join(MODEL_DIR, "router_distilbert")
 # === [추가] CSV 기반 Rule 설정 ===
 CSV_FILE_PATH = os.path.join(BASE_DIR, "data", "raw", "single.csv")
 
-# 호출할 외부 API 서버 (Node.js 등)
-EXTERNAL_API_BASE_URL = "http://localhost:3000"
+# 호출할 외부 API 서버
+# EXTERNAL_API_BASE_URL = "http://localhost:3000"
 
 # === 하드웨어 설정 ===
 # RTX 3060 활용
@@ -20,8 +20,8 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 # 1. Router: 논문에서 사용한 MPNet (SetFit 백본) 
 ROUTER_BASE_MODEL = "snunlp/KR-SBERT-V40K-klueNLI-augSTS"
 
-# SLLM 모델 (사용자님의 Qwen-0.6B 또는 유사 모델)
-# 실제 파인튜닝된 경로가 있다면 그 경로를 입력하세요.
+# SLLM 모델
+# 실제 파인튜닝된 경로가 있다면 그 경로를 입력
 # mistralai/Mistral-7B-Instruct-v0.3
 # Qwen/Qwen3-0.6B
 SLLM_MODEL_ID = "Qwen/Qwen3-0.6B"
