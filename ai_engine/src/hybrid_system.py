@@ -4,21 +4,16 @@ import time
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # 필요한 모듈 임포트
-try:
-    from src.router import UncertaintyRouter
-    from src.sllm_wrapper import SLLMWrapper
-    from src.csv_handler import CSVHandler
-    from config import settings
-except ImportError:
-    # 테스트 환경 등에서 경로 문제 발생 시 예외 처리
-    pass
 
-
+from src.router import UncertaintyRouter
+from src.sllm_wrapper import SLLMWrapper
+from src.csv_handler import CSVHandler
+from config import settings
 class HybridSystem:
     def __init__(self):
 
         # 0. CSV 핸들러 (Rule-based)
-        self.csv_handler = CSVHandler()
+        # self.csv_handler = CSVHandler()
 
         # 1. 라우터 로드 (학습된 모델이 있으면 그것을 로드)
         if os.path.exists(settings.ROUTER_MODEL_PATH):
@@ -51,20 +46,20 @@ class HybridSystem:
         
 
         # === [Step 0] CSV 규칙 매칭 (최우선 순위) ===
-        csv_result = self.csv_handler.check_and_execute(query)
+        # csv_result = self.csv_handler.check_and_execute(query)
 
-        if csv_result:
-            # CSV 규칙에 걸리면 바로 리턴 (SLLM/Router 생략 -> Latency 대폭 감소)
-            latency = time.time() - start_time
-            return {
-                "query": query,
-                "response": csv_result,
-                "detected_intent": "API_EXECUTION",
-                "routing_source": "CSV Rule (External API)",
-                "uncertainty_score": 0.0, # 100% 확실
-                "latency": f"{latency:.4f}s"
-            }
-        # CSV에 없을 때만 실행
+        # if csv_result:
+        #     # CSV 규칙에 걸리면 바로 리턴 (SLLM/Router 생략 -> Latency 대폭 감소)
+        #     latency = time.time() - start_time
+        #     return {
+        #         "query": query,
+        #         "response": csv_result,
+        #         "detected_intent": "API_EXECUTION",
+        #         "routing_source": "CSV Rule (External API)",
+        #         "uncertainty_score": 0.0, # 100% 확실
+        #         "latency": f"{latency:.4f}s"
+        #     }
+        # # CSV에 없을 때만 실행
         mc_preds = self.router.predict_mc_dropout(query)
         routing_result = self.router.check_uncertainty(mc_preds)
 
