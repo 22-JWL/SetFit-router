@@ -10,7 +10,7 @@ ROUTER_MODEL_PATH = os.path.join(MODEL_DIR, "router_distilbert")
 CSV_FILE_PATH = os.path.join(BASE_DIR, "data", "raw", "single.csv")
 
 # 호출할 외부 API 서버
-# EXTERNAL_API_BASE_URL = "http://localhost:3000"
+EXTERNAL_API_BASE_URL = "http://localhost:3000"
 
 # === 하드웨어 설정 ===
 # RTX 3060 활용
