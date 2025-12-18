@@ -26,7 +26,7 @@ ROUTER_BASE_MODEL = "snunlp/KR-SBERT-V40K-klueNLI-augSTS"
 # Qwen/Qwen3-0.6B
 SLLM_MODEL_ID = "Qwen/Qwen3-0.6B"
 
-# === 라우팅 전략 (논문 핵심) ===
+# === 라우팅 전략 ===
 # MC Dropout 샘플링 횟수 (논문에서는 최대 20 사용 [cite: 389, 393])
 MC_SAMPLES = 20
 
@@ -37,8 +37,18 @@ CONFIDENCE_THRESHOLD = 0.8
 # === 의도(Intent) 정의 ===
 # 0, 1: SetFit(Router) 처리, 2: SLLM 처리, 3: OOS
 ID2LABEL = {
-    0: "SINGLE_QUESTION",       # 단일 질문
-    1: "COMPLEX_ANALYSIS",   # 복합 분석 (SLLM 필요)
-    2: "OUT_OF_SCOPE"        # 도메인 밖
+    0: "BGA_QUESTION",   # BGA 질문
+    1: "Calibration_QUESTION",   # Calibration 질문
+    2: "common_prompt",   # 공통 프롬프트
+    3: "ConfirmLog",   # yes/no
+    4: "History_QUESTION",   # History 질문
+    5: "LGA_QUESTION",   # LGA 질문
+    6: "Light_QUESTION",   # Light 질문
+    7: "Mapping_QUESTION",   # Mapping 질문
+    8: "QFN_QUESTION",   # QFN 질문
+    9: "Settings_QUESTION",   # Settings 질문
+    10: "Strip_QUESTION",   # Strip 질문
+    11: "vague", # 애매모호한 질문
+    12: "OUT_OF_SCOPE" # 도메인 밖
 }
 LABEL2ID = {v: k for k, v in ID2LABEL.items()}

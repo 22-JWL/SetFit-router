@@ -103,41 +103,70 @@ def main():
     # === 1. CSV 파일 경로 정의 ===
     # ai_engine/data/raw 폴더 내의 CSV 파일들
     base_data_path = os.path.join(settings.BASE_DIR, "data", "raw")
-    single_csv_path = os.path.join(base_data_path, "single.csv")
-    composite_csv_path = os.path.join(base_data_path, "composite.csv")
+    bga_csv_path = os.path.join(base_data_path, "bga.csv")
+    lga_csv_path = os.path.join(base_data_path, "lga.csv")
+    light_csv_path = os.path.join(base_data_path, "light.csv")
+    mapping_csv_path = os.path.join(base_data_path, "mapping.csv")
+    qfn_csv_path = os.path.join(base_data_path, "qfn.csv")
+    settings_csv_path = os.path.join(base_data_path, "settings.csv")
+    strip_csv_path = os.path.join(base_data_path, "strip.csv")
+    history_csv_path = os.path.join(base_data_path, "history.csv")
+    common_csv_path = os.path.join(base_data_path, "common_prompt.csv")
+    confirmlog_csv_path = os.path.join(base_data_path, "confirmlog.csv")
+    calibration_csv_path = os.path.join(base_data_path, "calibration.csv")
+    # vague_csv_path = os.path.join(base_data_path, "vague.csv")
 
 
     raw_data = []
 
 # === 2. CSV 데이터 로드 ===
     # single.csv (B열) -> Label 0 (FACTUAL_SPEC)
-    single_data = load_csv_data(single_csv_path, 0)     # Label 0
+    bga_data = load_csv_data(bga_csv_path, 0)     # Label 0
 
     # composite.csv (B열) -> Label 1 (COMPLEX_ANALYSIS)
-    composite_data = load_csv_data(composite_csv_path, 1) # Label 1
+    calibration_data = load_csv_data(calibration_csv_path, 1)     # Label 1
+    common_data = load_csv_data(common_csv_path, 2)     # Label 2
+    confirmlog_data = load_csv_data(confirmlog_csv_path, 3)     # Label 3
+    history_data = load_csv_data(history_csv_path, 4)     # Label 4
+    lga_data = load_csv_data(lga_csv_path, 5)     # Label 5
+    light_data = load_csv_data(light_csv_path, 6)     # Label 6
+    mapping_data = load_csv_data(mapping_csv_path, 7)     # Label 7
+    qfn_data = load_csv_data(qfn_csv_path, 8)     # Label 8
+    settings_data = load_csv_data(settings_csv_path, 9)     # Label 9
+    strip_data = load_csv_data(strip_csv_path, 10)     # Label 10
+    # vague_data = load_csv_data(vague_csv_path, 11)     # Label 11
+
 
 # === 3. 부족한 라벨 보강 (Label 1 & 기본 데이터) ===
     # CSV에 없는 Label 1(절차)이나 기본 패턴이 부족할 수 있으므로 최소한의 데이터를 하드코딩으로 추가
     basic_data = [
-        # Label 1: 절차/가이드 (CSV가 없으므로 수동 추가 필요)
-        ("세팅창 열어줘", 0),
-        # Label 2: OOS (기본 시드 데이터)
-        ("오늘 날씨 어때?", 2),
-        ("미국 대통령이 누구야?", 2),
-        ("할 수 있는게 뭐야?", 2),
-        ("가장 맛있는 과자는?", 2),
-        ("오늘의 기온은?", 2),
-        ("오징어 먹고싶다", 2),
-        ("점심 뭐 먹을까?", 2),
-        ("잠을 잘 자는 법?", 2),
-        ("커피 빨러 갈까?", 2),
-        ("심심해", 2),
-
+        # Label : 절차/가이드 (CSV가 없으므로 수동 추가 필요)
+        # Label 12: OOS (기본 시드 데이터)
+        ("오늘 날씨 어때?", 12),
+        ("미국 대통령이 누구야?", 12),
+        ("할 수 있는게 뭐야?", 12),
+        ("가장 맛있는 과자는?", 12),
+        ("오늘의 기온은?", 12),
+        ("오징어 먹고싶다", 12),
+        ("점심 뭐 먹을까?", 12),
+        ("잠을 잘 자는 법?", 12),
+        ("커피 빨러 갈까?", 12),
+        ("심심해", 12),
     ]
 
-    # raw_data += (single_data * AMPLIFICATION_FACTOR)
-    raw_data += (composite_data * AMPLIFICATION_FACTOR)
-    # raw_data += (basic_data * 100) # 기본 데이터도 증폭
+    raw_data += (bga_data * AMPLIFICATION_FACTOR)
+    raw_data += (calibration_data * AMPLIFICATION_FACTOR)
+    raw_data += (confirmlog_data * AMPLIFICATION_FACTOR)
+    raw_data += (history_data * AMPLIFICATION_FACTOR)
+    raw_data += (lga_data * AMPLIFICATION_FACTOR)
+    raw_data += (light_data * AMPLIFICATION_FACTOR)
+    raw_data += (mapping_data * AMPLIFICATION_FACTOR)
+    raw_data += (qfn_data * AMPLIFICATION_FACTOR)
+    raw_data += (settings_data * AMPLIFICATION_FACTOR)
+    raw_data += (strip_data * AMPLIFICATION_FACTOR)
+    raw_data += (common_data * AMPLIFICATION_FACTOR)
+    # raw_data += (vague_data * AMPLIFICATION_FACTOR)
+    raw_data += (basic_data * 10) # 기본 데이터도 증폭
 
     print(f">>> Total examples after amplification: {len(raw_data)}")
 
@@ -146,10 +175,10 @@ def main():
     for text, label in raw_data:
         # 정상 데이터 추가
         aug_data.append({"text": text, "label": label})
-        # OOS 데이터 증강 (기존 문장 망가뜨리기 -> 라벨 2(OOS) 부여)
+        # OOS 데이터 증강 (기존 문장 망가뜨리기 -> 라벨 12(OOS) 부여)
         if random.random() > 0.7:  # 30% 비율로 생성
             aug_text = generate_negative_augmentation_with_keybert(text)
-            aug_data.append({"text": aug_text, "label": 2})  # 강제로 OOS 라벨 부여
+            aug_data.append({"text": aug_text, "label": 12})  # 강제로 OOS 라벨 부여
 
     df = pd.DataFrame(aug_data)
     train_dataset = Dataset.from_pandas(df)
@@ -213,6 +242,7 @@ def main():
     trainer.train_embeddings = skip_embedding_training
 
     print(">>> Training Router Head...")
+    print("Unique labels in dataset:", set(train_dataset["label"]))
     trainer.train()
 # 7. 모델 저장
     # 폴더가 없으면 생성

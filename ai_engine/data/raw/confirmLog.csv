@@ -1,0 +1,10 @@
+id ,text,label,index,description
+1099,응 ,/openWindow/yes,99,긍정 단답 yes 처리
+1100,네 ,/openWindow/yes,99,긍정 단답 yes 처리
+1101,yes ,/openWindow/yes,99,영어 긍정 yes 처리
+1102,좋아 ,/openWindow/yes,99,긍정 단답
+1103,예 ,/openWindow/yes,99,긍정 단답
+1095,아니 ,/openWindow/no,99,부정 단답 no 처리
+1096,싫어 ,/openWindow/no,99,부정 단답
+1097,no ,/openWindow/no,99,영어 부정 no 처리
+1098,아니요 ,/openWindow/no,99,부정 단답

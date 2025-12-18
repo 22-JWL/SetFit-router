@@ -40,18 +40,35 @@ def load_csv_data(file_path):
 def main():
     print(">>> Initializing Hybrid SLLM System...")
     base_data_path = os.path.join(settings.BASE_DIR, "data", "raw")
-    single_csv_path = os.path.join(base_data_path, "single.csv")
-    composite_csv_path = os.path.join(base_data_path, "composite.csv")
+    # single_csv_path = os.path.join(base_data_path, "single.csv")
+    # composite_csv_path = os.path.join(base_data_path, "composite.csv")
+    bga_data = load_csv_data(os.path.join(base_data_path, "bga.csv"))
+    calibration_data = load_csv_data(os.path.join(base_data_path, "calibration.csv"))
+    common_data = load_csv_data(os.path.join(base_data_path, "common_prompt.csv"))
+    confirm_log_data = load_csv_data(os.path.join(base_data_path, "confirmlog.csv"))
+    history_data = load_csv_data(os.path.join(base_data_path, "history.csv"))
+    lga_data = load_csv_data(os.path.join(base_data_path, "lga.csv"))
+    light_data = load_csv_data(os.path.join(base_data_path, "light.csv"))
+    mapping_data = load_csv_data(os.path.join(base_data_path, "mapping.csv"))
+    qfn_data = load_csv_data(os.path.join(base_data_path, "qfn.csv"))
+    settings_data = load_csv_data(os.path.join(base_data_path, "settings.csv"))
+    strip_data = load_csv_data(os.path.join(base_data_path, "strip.csv"))
+    # vague_data = load_csv_data(os.path.join(base_data_path, "vague.csv"))
+
 
 
     system = HybridSystem()
 
-    single_data = load_csv_data(single_csv_path)
-    composite_data = load_csv_data(composite_csv_path)
+    # single_data = load_csv_data(single_csv_path)
+    # composite_data = load_csv_data(composite_csv_path)
+    synthesize_data = (
+        bga_data + calibration_data + common_data + confirm_log_data +
+        history_data + lga_data + light_data + mapping_data +
+        qfn_data + settings_data + strip_data
+    )
+    
 
-    test_queries = [
-        "BGA 티칭 창 열어",  # 단순 (Router 예상)
-        "코너 각도 2.5로 만들어",
+    test_queries = [# 단순 (Router 예상)
         "오늘 날씨 어때?",  # OOS (Router가 OOS 혹은 불확실로 잡음)
         "미국 대통령이 누구야?",
         "할 수 있는게 뭐야?",
@@ -65,8 +82,11 @@ def main():
         "히스토리 창 열어"
     ]
 
-    test_queries += single_data
-    test_queries += composite_data
+    # test_queries += single_data
+    # test_queries += composite_data
+    test_queries += synthesize_data
+
+
 
     print(f"\n>>> 총 테스트할 문장 개수: {len(test_queries)}")
     print(f">>> composite 데이터 샘플 확인 (마지막 3개): {test_queries[-3:]}")
@@ -77,6 +97,7 @@ def main():
         print("-" * 50)
         print(f"Q: {result['query']}")
         print(f"Intent: {result['detected_intent']}")
+        print(f"Confidence: {result['confidence_pct']} | Uncertainty: {result['uncertainty_pct']} (Uncertain: {result['is_uncertain']})")
         print(f"Source: {result['routing_source']}")
         print(f"Latency: {result['latency']}")
         print(f"Response: {result['response']}")

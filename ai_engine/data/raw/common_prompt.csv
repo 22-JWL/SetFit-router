@@ -1,0 +1,354 @@
+id ,text,label,index,description
+259,스트립 화면 열기,/windows/teaching/strip,1,
+260,Strip 티칭 켜줘,/windows/teaching/strip,1,
+261,스트립 티칭 열어,/windows/teaching/strip,1,
+262,Strip 창 띄워,/windows/teaching/strip,1,
+263,스트립 교정 시작,/windows/teaching/strip,1,
+264,스트립 티칭 창 열어줘 ,/windows/teaching/strip,1,스트립 티칭 창 열기
+265,strip 티칭 띄워 ,/windows/teaching/strip,1,strip 창 열기
+266,Strip 티칭 창 열어 ,/windows/teaching/strip,1,Strip 티칭 창 열기
+267,Strip 교정 시작 ,/windows/teaching/strip,1,Strip 티칭 교정 시작
+268,Strip 창 켜. ,/windows/teaching/strip,1,
+269,Strip 창 보여줘. ,/windows/teaching/strip,1,
+270,티칭창 STRIP 실행,/windows/teaching/strip,1,
+271,teaching STRIP,/windows/teaching/strip,1,
+272,STRIP 유형 자재 티칭창 켜줘,/windows/teaching/strip,1,
+273,스트립 티칭 창 활성화,/windows/teaching/strip,1,
+274,strip 창,/windows/teaching/strip,1,
+275,Strip 티칭 창,/windows/teaching/strip,1,
+276,스트립 티칭 창,/windows/teaching/strip,1,
+242,QFN 화면 열어,/windows/teaching/qfn,1,
+243,QFN 창 켜줘,/windows/teaching/qfn,1,
+244,QFN 티칭 열어,/windows/teaching/qfn,1,
+245,QFN 작업창 띄워,/windows/teaching/qfn,1,
+246,QFN 티칭 열기 ,/windows/teaching/qfn,1,QFN 티칭 창 열기
+247,QFN 창 보여줘 ,/windows/teaching/qfn,1,QFN 창 열기
+248,QFN 티칭 창 열기 ,/windows/teaching/qfn,1,QFN 티칭 창 열기
+249,QFN 작업창 화면 ,/windows/teaching/qfn,1,QFN 작업창 열기
+250,QFN 창 보여줘. ,/windows/teaching/qfn,1,
+251,QFN 티칭 켜. ,/windows/teaching/qfn,1,
+252,티칭창 QFN 실행,/windows/teaching/qfn,1,
+253,teaching QFN,/windows/teaching/qfn,1,
+254,QFN 유형 자재 티칭창 켜줘,/windows/teaching/qfn,1,
+255,qfn 티칭 창 활성화,/windows/teaching/qfn,1,
+256,qfn 창,/windows/teaching/qfn,1,
+257,QFN teacing 열어,/windows/teaching/qfn,1,
+258,QFN teacing 켜,/windows/teaching/qfn,1,QFN 티칭 창 열기
+225,PRS 결과 재티칭,/windows/teaching/prs/reteach,1,
+226,PRS 창 재실행,/windows/teaching/prs/reteach,1,
+227,PRS 재작업 실행,/windows/teaching/prs/reteach,1,
+228,PRS 재티칭 화면 열기 ,/windows/teaching/prs/reteach,1,PRS 결과 기반 재티칭 화면
+229,PRS 재티칭 실행 ,/windows/teaching/prs/reteach,1,PRS 결과 기반 재티칭 실행
+230,PRS 창 다시 실행,/windows/teaching/prs/reteach,1,
+231,PRS 티칭 다시 시작해,/windows/teaching/prs/reteach,1,PRS 결과 기반 재티칭 실행
+232,PRS reteaching 해,/windows/teaching/prs/reteach,1,
+212,매핑 재티칭 시작,/windows/teaching/mapping/reteach,1,
+213,맵핑 리티칭 실행,/windows/teaching/mapping/reteach,1,
+214,매핑 샷 재활성화,/windows/teaching/mapping/reteach,1,
+215,맵핑 다시 티칭,/windows/teaching/mapping/reteach,1,
+216,맵핑 재티칭 창 열어줘 ,/windows/teaching/mapping/reteach,1,맵핑 샷 기반 재티칭 창 열기
+217,Mapping 재티칭 실행 ,/windows/teaching/mapping/reteach,1,Mapping 샷 기반 재티칭 실행
+218,매핑 reteaching 해줘,/windows/teaching/mapping/reteach,1,
+219,mapping reteach 시작,/windows/teaching/mapping/reteach,1,
+220,매핑 샷 기반 재티칭 창 열어주세요,/windows/teaching/mapping/reteach,1,현재 매핑 샷 기반 재티칭 창 열기
+221,매핑 재티칭 창 띄워줘,/windows/teaching/mapping/reteach,1,매핑 재티칭 창 열기
+222,매핑 재티칭 창 열기,/windows/teaching/mapping/reteach,1,매핑 샷 기반 재티칭 창 열기
+223,매핑 재티칭 화면 보여줘,/windows/teaching/mapping/reteach,1,매핑 재티칭 화면 표시
+224,매핑 샷 재티칭 페이지로,/windows/teaching/mapping/reteach,1,매핑 재티칭 페이지 이동
+180,맵핑 윈도우 열기,/windows/teaching/mapping,1,
+181,매핑 티칭 열어,/windows/teaching/mapping,1,
+182,매핑 작업 시작,/windows/teaching/mapping,1,
+183,맵핑 창 열어 ,/windows/teaching/mapping,1,맵핑 티칭 창 열기
+184,맵핑 창 띄워줘 ,/windows/teaching/mapping,1,맵핑 창 열기
+185,Mapping 티칭 창 열기 ,/windows/teaching/mapping,1,Mapping 티칭 창 열기
+186,맵핑 창 보여줘. ,/windows/teaching/mapping,1,
+187,맵핑 창 열어 줘. ,/windows/teaching/mapping,1,
+188,맵핑 티칭 실행! ,/windows/teaching/mapping,1,
+189,티칭창 매핑 실행,/windows/teaching/mapping,1,
+190,teaching mapping,/windows/teaching/mapping,1,
+191,매핑 유형 자재 티칭창 켜줘,/windows/teaching/mapping,1,
+192,teaching mapping 시작해줘,/windows/teaching/mapping,1,
+193,매핑 유형 자재 창 보여줘,/windows/teaching/mapping,1,
+194,MAPPING 티칭 창 열어줘,/windows/teaching/mapping,1,MAPPING 티칭 창 열기
+195,MAPPING 티칭 화면 보여주세요,/windows/teaching/mapping,1,MAPPING 티칭 창 표시
+196,매핑 티칭 페이지로 이동,/windows/teaching/mapping,1,MAPPING 티칭 메뉴 이동
+197,매핑 티칭창 실행해줘,/windows/teaching/mapping,1,MAPPING 티칭 화면 실행
+198,MAPPING 티칭 설정 열기,/windows/teaching/mapping,1,MAPPING 티칭 세팅창 열기
+199,매핑 창 띄워주세요,/windows/teaching/mapping,1,MAPPING 창 표시 요청
+200,MAPPING 티칭 메뉴 보여줘,/windows/teaching/mapping,1,MAPPING 메뉴 전체 열기
+201,매핑 티칭 페이지 호출,/windows/teaching/mapping,1,MAPPING 티칭 페이지 열기
+202,MAPPING 티칭화면 띄워줘,/windows/teaching/mapping,1,MAPPING 티칭 창 바로보기
+203,매핑 티칭창으로 이동,/windows/teaching/mapping,1,MAPPING 티칭 창 이동
+204,매핑 티칭 창을 열어 주시겠어요?,/windows/teaching/mapping,1,MAPPING 티칭 창 열기 요청
+205,MAPPING 설정 화면으로 가줘,/windows/teaching/mapping,1,MAPPING 티칭 창 이동
+206,매핑 티칭 페이지 보여주세요,/windows/teaching/mapping,1,MAPPING 티칭 페이지 표시
+207,MAPPING 창 켜줘,/windows/teaching/mapping,1,MAPPING 티칭 창 활성화
+208,매핑 티칭 메뉴 실행,/windows/teaching/mapping,1,MAPPING 티칭 메뉴 실행
+209,MAPPING 티칭으로 전환,/windows/teaching/mapping,1,MAPPING 티칭 전환
+210,매핑 설정 창 띄워 주세요,/windows/teaching/mapping,1,MAPPING 설정 창 열기
+211,MAPPING 티칭 화면 활성화,/windows/teaching/mapping,1,MAPPING 티칭 화면 켜기
+166,LGA 창 켜,/windows/teaching/lga,1,
+167,LGA 티칭 열어줘,/windows/teaching/lga,1,
+168,LGA 화면 보여,/windows/teaching/lga,1,
+169,LGA 티칭 창 열기,/windows/teaching/lga,1,
+170,LGA 티칭 켜줘 ,/windows/teaching/lga,1,LGA 티칭 창 열기
+171,LGA 티칭 탭 열기 ,/windows/teaching/lga,1,LGA 티칭 창 열기
+172,티칭 창 띄워. ,/windows/teaching/lga,1,
+173,티칭 창 열어 주세요. ,/windows/teaching/lga,1,
+174,LGA 티칭 보여줘. ,/windows/teaching/lga,1,
+175,티칭창 LGA 실행,/windows/teaching/lga,1,
+176,teaching LGA,/windows/teaching/lga,1,
+177,LGA 유형 자재 티칭창 켜줘,/windows/teaching/lga,1,
+178,LGA 티칭 창 켜줘,/windows/teaching/lga,1,
+179,LGA 티칭 창 열어줘,/windows/teaching/lga,1,
+150,BGA 티칭 시작,/windows/teaching/bga,1,
+151,BGA 티칭 창 켜,/windows/teaching/bga,1,
+152,BGA 설정창 띄워,/windows/teaching/bga,1,
+153,BGA 티칭 시작 ,/windows/teaching/bga,1,BGA 티칭 창 열기
+154,BGA 창 열어. ,/windows/teaching/bga,1,
+155,BGA 티칭 켜줘. ,/windows/teaching/bga,1,
+156,티칭창 BGA 실행,/windows/teaching/bga,1,
+157,teaching BGA,/windows/teaching/bga,1,
+158,BGA 유형 자재 티칭창 켜줘,/windows/teaching/bga,1,
+159,BGA 티칭 창 열어,/windows/teaching/bga,1,
+160,BGA 티칭 창 열기,/windows/teaching/bga,1,
+161,BGA 티칭 열기,/windows/teaching/bga,1,
+162,BGA teacing 열기,/windows/teaching/bga,1,
+163,BGA teacing open,/windows/teaching/bga,1,
+164,BGA teacing 시작,/windows/teaching/bga,1,
+165,BGA teacing 켜,/windows/teaching/bga,1,
+130,SetUp 화면 열어줘,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+131,셋업 창 켜,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+132,설정 화면 띄워,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+133,셋업 메뉴 보여줘,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+134,셋업창,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+135,setup 켜줘,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+136,set up 열어,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+137,설정 열어,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+138,설정 ,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+139,셋업 모드 전환,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+140,셋업모드,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+141,setup창,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+142,SETUP 모드 켜,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+143,셋업 탭 보여줘,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+144,설정 탭,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+145,셋업창으로 이동,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+146,setup 들어가,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+147,셋업 화면 띄우기,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+148,셋업창 열어버려,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+149,셋업창 켜 버려,/mode/set?mode=SETUP,1,SetUp 화면을 엽니다
+124,시스템 옵션 열기,/windows/settings,1,
+125,시스템 설정 열어,/windows/settings,1,
+126,설정 창 열어줘 ,/windows/settings,1,전역/시스템 설정 창 열기
+127,세팅,/windows/settings,1,
+128,시스템 옵션 켜줘,/windows/settings,1,
+129,설정창 보여줘,/windows/settings,1,
+108,Run 화면 열어줘,/mode/set?mode=RUN,1,Run 화면을 엽니다
+109,런 화면 띄워,/mode/set?mode=RUN,1,Run 화면을 엽니다
+110,런 켜,/mode/set?mode=RUN,1,Run 화면을 엽니다
+111,Run 창으로 이동,/mode/set?mode=RUN,1,Run 화면을 엽니다
+112,런작동창,/mode/set?mode=RUN,1,Run 화면을 엽니다
+113,실행 화면 띄워,/mode/set?mode=RUN,1,Run 화면을 엽니다
+114,런화면띄워,/mode/set?mode=RUN,1,Run 화면을 엽니다
+115,Run화면 켜,/mode/set?mode=RUN,1,Run 화면을 엽니다
+116,런모드,/mode/set?mode=RUN,1,Run 화면을 엽니다
+117,런탭 보여줘,/mode/set?mode=RUN,1,Run 화면을 엽니다
+118,런옵션,/mode/set?mode=RUN,1,Run 화면을 엽니다
+119,런 화면 전환,/mode/set?mode=RUN,1,Run 화면을 엽니다
+120,런 화면 켜 줘,/mode/set?mode=RUN,1,Run 화면을 엽니다
+121,런창,/mode/set?mode=RUN,1,Run 화면을 엽니다
+122,런창 보여줘,/mode/set?mode=RUN,1,Run 화면을 엽니다
+123,런,/mode/set?mode=RUN,1,Run 화면을 엽니다
+50,lighting 화면 열기,/windows/light,1,
+51,빛 세팅 열어,/windows/light,1,
+52,조명 설정창 켜,/windows/light,1,
+53,라이트 세팅 열기,/windows/light,1,
+54,불 켜 줘 ,/windows/light,1,조명 창 열기
+55,조명 세팅 열기 ,/windows/light,1,조명 설정 창 열기
+56,조명 창 열어줘 ,/windows/light,1,조명 창 열기
+57,조명 켜. ,/windows/light,1,
+58,불 좀 켜줘. ,/windows/light,1,
+59,불 밝게 해줘. ,/windows/light,1,
+60,조명 켜 주세요. ,/windows/light,1,
+61,조명 좀 밝혀. ,/windows/light,1,
+62,불을 최대 밝기로 해! ,/windows/light,1,
+63,불 켜주실 수 있나요? ,/windows/light,1,
+64,조명 최대 밝기. ,/windows/light,1,
+65,라이트 ON ,/windows/light,1,
+66,조명 꺼. ,/windows/light,1,
+67,조명 꺼 주세요. ,/windows/light,1,
+68,불 끄기. ,/windows/light,1,
+69,불 꺼줘. ,/windows/light,1,
+70,불 안 보여. ,/windows/light,1,
+71,불 좀 꺼 ,/windows/light,1,
+72,라이트 창,/windows/light,1,
+73,조명 컨트롤러 값 설정창,/windows/light,1,light 창
+74,라이트 창 열어줘,/windows/light,1,
+17,히스토리 보여줘,/windows/history,1,
+18,검사 로그 열어줘,/windows/history,1,
+19,기록 창 열어,/windows/history,1,
+20,검사 이력 볼래,/windows/history,1,
+21,검사 기록 확인,/windows/history,1,
+22,검사 이력 봐볼래,/windows/history,1,
+23,히스토리 창 열어줘 ,/windows/history,1,검사 이력/기록 창 열기
+24,이력 확인 창 열어 ,/windows/history,1,검사 기록 창 열기
+25,히스토리 보여줘 ,/windows/history,1,검사 이력 창 열기
+26,기록 확인할래 ,/windows/history,1,전체 검사 기록 창 열기
+27,최근 검사 기록 열어줘 ,/windows/history,1,전체 검사 이력 비교
+28,최근 기록 ,/windows/history,1,최근 전체 이력 빠른 조회
+29,로그 확인 ,/windows/history,1,로그 데이터 확인
+30,이력창 보여줘. ,/windows/history,1,
+31,이력 창 열어. ,/windows/history,1,
+32,히스토리 창 열어 줘. ,/windows/history,1,
+33,히스토리 보여줘. ,/windows/history,1,
+34,SPC history 창,/windows/history,1,
+35,기록 창,/windows/history,1,
+36,히스토리 창,/windows/history,1,
+37,히스토리 창 열어줘,/windows/history,1,검사/프로그램 사용 기록 창 열기
+38,검사 기록 창 보여줘,/windows/history,1,검사 기록 창 열기
+39,검사용 이력 확인,/windows/history,1,검사 결과 기록 조회
+40,기록 조회,/windows/history,1,지정한 날짜의 검사 기록 조회
+41,최근 프로그램 사용 내역 조회,/windows/history,1,프로그램 사용 기록 내역 조회
+42,검사 기록만 필터링해줘,/windows/history,1,조건 지정 없이 전체 기록 조회
+43,기록,/windows/history,1,검사 기록 창 열기
+44,검사 기록 ,/windows/history,1,검사 기록 창 열기
+45,히스토리,/windows/history,1,검사 기록 창 열기
+1,캘리브레이션 창 보여줘 ,/windows/calibration,1,캘리브레이션(보정) 창 열기
+2,캘리 창 열기 ,/windows/calibration,1,보정 창 열기
+3,캘리브레이션 창 열어 ,/windows/calibration,1,보정(캘리브레이션) 창 열기
+4,보정 화면 켜줘 ,/windows/calibration,1,보정 창 열기
+5,캘리브레이션 창 열어줘. ,/windows/calibration,1,
+6,보정 창 열어. ,/windows/calibration,1,
+7,보정 창 켜줘. ,/windows/calibration,1,
+8,보정 상태 보여줘. ,/windows/calibration,1,
+9,셋업 캘리 창,/windows/calibration,1,
+10,캘리,/windows/calibration,1,
+11,캘리브레이션,/windows/calibration,1,
+12,캘리브레이션 작업 시작,/windows/calibration,1,
+13,캘리브레이션 시작,/windows/calibration,1,
+14,calibration 창 보여줘,/windows/calibration,1,
+15,cali,/windows/calibration,1,
+16,calibration,/windows/calibration,1,
+1027,PRS 기반 테스트,/test/run/prs,7,
+1028,PRS 레시피 확인,/test/run/prs,7,
+1029,PRS 실행,/test/run/prs,7,
+1030,PRS 검사 실행 ,/test/run/prs,7,PRS 검사 실행
+1031,PRS 티칭 정보 점검 ,/test/run/prs,7,현재 티칭 정보 검증
+1032,PRS 검사 테스트 시작해 ,/test/run/prs,7,검사 테스트 시작
+1033,현재 티칭 정보 점검 ,/test/run/prs,7,현재 티칭 정보 검증
+1034,검사 테스트 시작해 ,/test/run/prs,7,검사 테스트 시작
+1020,매핑 테스트 돌려,/test/run/map,7,
+1021,맵핑 테스트 실행,/test/run/map,7,
+1022,맵 테스트 실행,/test/run/map,7,
+1023,맵핑 레시피 검증,/test/run/map,7,
+1024,맵핑 테스트 돌려 ,/test/run/map,7,매핑 테스트 실행
+1025,매핑 레시피 점검 ,/test/run/map,7,매핑 레시피 검증
+1026,맵 레시피 실행 ,/test/run/map,7,맵핑 레시피 실행
+1064,세팅 모드로 바꿔,/mode/set?mode=SETUP,9,
+1065,환경 설정 모드,/mode/set?mode=SETUP,9,
+1066,설정 모드로 변경 ,/mode/set?mode=SETUP,9,Setup 모드 전환
+1067,세팅 모드 진입 ,/mode/set?mode=SETUP,9,Setup 모드 진입
+1068,세팅 시작 ,/mode/set?mode=SETUP,9,세팅 모드 시작
+1069,장비 설정 모드로 변경 ,/mode/set?mode=SETUP,9,장비 설정 모드 변경
+1070,Setup 모드 해줘. ,/mode/set?mode=SETUP,9,
+1071,설정모드로 전환해. ,/mode/set?mode=SETUP,9,
+1072,세팅 모드 진입,/mode/set?mode=SETUP,9,
+1073,setup 시작,/mode/set?mode=SETUP,9,
+1074,모드 전환 버튼 setup으로,/mode/set?mode=SETUP,9,
+1075,모드 전환 버튼 셋업으로,/mode/set?mode=SETUP,9,
+1076,setup으로 변경,/mode/set?mode=SETUP,9,
+1044,런 모드 실행,/mode/set?mode=RUN,9,
+1045,운전 모드 전환,/mode/set?mode=RUN,9,
+1046,검사 시작 모드,/mode/set?mode=RUN,9,
+1047,RUN 모드 켜,/mode/set?mode=RUN,9,
+1048,검사 모드로 변경,/mode/set?mode=RUN,9,
+1049,실행모드로,/mode/set?mode=RUN,9,
+1050,런 모드 실행 ,/mode/set?mode=RUN,9,Run 모드 전환
+1051,운전 모드로 바꿔 ,/mode/set?mode=RUN,9,Run 모드 전환
+1052,검사 시작 모드 켜줘 ,/mode/set?mode=RUN,9,검사 모드 켜기
+1053,검사 모드로 변경 ,/mode/set?mode=RUN,9,검사 모드 전환
+1054,장비 운전 모드 시작 ,/mode/set?mode=RUN,9,장비 운전 모드 실행
+1055,시스템 런 모드 변환 ,/mode/set?mode=RUN,9,시스템 런 모드 변환
+1056,운전모드 시작해. ,/mode/set?mode=RUN,9,
+1057,운전 모드 바꿔줘. ,/mode/set?mode=RUN,9,
+1058,장비 운전모드. ,/mode/set?mode=RUN,9,
+1059,run 시작,/mode/set?mode=RUN,9,
+1060,모드 전환 버튼 run으로,/mode/set?mode=RUN,9,
+1061,모드 전환 버튼 런으로,/mode/set?mode=RUN,9,
+1062,run으로 변경,/mode/set?mode=RUN,9,
+1063,RU1 모드 켜,/mode/set?mode=RUN,9,
+337,카메라 6 on,/live/toggle?switch=ON&no=6,2,6번 카메라 라이브 켜기
+333,5번 카메라 라이브 켜,/live/toggle?switch=ON&no=5,2,
+334,카메라 5 켜 ,/live/toggle?switch=ON&no=5,2,5번 카메라 켜기
+335,5번 카메라 라이브 ,/live/toggle?switch=ON&no=5,2,5번 카메라 라이브
+336,카메라 5 on,/live/toggle?switch=ON&no=5,2,5번 카메라 라이브 켜기
+329,카메라 4번 라이브 켜,/live/toggle?switch=ON&no=4,2,
+330,4번 카메라 켜,/live/toggle?switch=ON&no=4,2,
+331,카메라 4 켜줘 ,/live/toggle?switch=ON&no=4,2,4번 카메라 켜기
+332,카메라 4 on,/live/toggle?switch=ON&no=4,2,4번 카메라 라이브 켜기
+320,3번 카메라 켜 줘,/live/toggle?switch=ON&no=3,2,
+321,3번 카메라 켜,/live/toggle?switch=ON&no=3,2,
+322,3번 카메라 라이브 켜,/live/toggle?switch=ON&no=3,2,
+323,카메라 3번 라이브 켜,/live/toggle?switch=ON&no=3,2,
+324,카메라 3 보여줘,/live/toggle?switch=ON&no=3,2,
+325,삼번 카메라 볼래,/live/toggle?switch=ON&no=3,2,
+326,카메라 3 켜 ,/live/toggle?switch=ON&no=3,2,3번 카메라 켜기
+327,삼번 카메라 on 시켜줘 ,/live/toggle?switch=ON&no=3,2,3번 카메라 켜기
+328,카메라 3 on,/live/toggle?switch=ON&no=3,2,3번 카메라 라이브 켜기
+313,카메라 2번 켜,/live/toggle?switch=ON&no=2,2,
+314,카메라 2 볼래,/live/toggle?switch=ON&no=2,2,
+315,2번 카메라 켜 줘,/live/toggle?switch=ON&no=2,2,
+316,2번 카메라 라이브 켜,/live/toggle?switch=ON&no=2,2,
+317,카메라 2번 라이브 켜,/live/toggle?switch=ON&no=2,2,
+318,2번 카메라 켜 줘 ,/live/toggle?switch=ON&no=2,2,2번 카메라 켜기
+319,카메라 2 on,/live/toggle?switch=ON&no=2,2,2번 카메라 라이브 켜기
+305,카메라 1 온,/live/toggle?switch=ON&no=1,2,
+306,1번 카메라 켜 줘,/live/toggle?switch=ON&no=1,2,
+307,카메라 1번 켜,/live/toggle?switch=ON&no=1,2,
+308,카메라 1 켜 ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+309,1번 카메라 On ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+310,카메라 one 라이브 켜줘 ,/live/toggle?switch=ON&no=1,2,1번 카메라 켜기
+311,1 카메라 라이브 ,/live/toggle?switch=ON&no=1,2,1번 카메라 라이브 켜기
+312,카메라 1 on,/live/toggle?switch=ON&no=1,2,1번 카메라 라이브 켜기
+301,0번 카메라 켜,/live/toggle?switch=ON&no=0,2,
+302,카메라 0번 켜,/live/toggle?switch=ON&no=0,2,
+303,카메라 0번 켜 ,/live/toggle?switch=ON&no=0,2,0번 카메라 켜기
+304,카메라 Zero ON ,/live/toggle?switch=ON&no=0,2,0번 켜기(자연어/영문변형)
+300,카메라 6 off,/live/toggle?switch=OFF&no=6,2,6번 카메라 끄기
+295,5번 카메라 꺼,/live/toggle?switch=OFF&no=5,2,
+296,5번 카메라 꺼줘,/live/toggle?switch=OFF&no=5,2,
+297,카메라 5 끄기,/live/toggle?switch=OFF&no=5,2,
+298,5번 카메라 끄기 ,/live/toggle?switch=OFF&no=5,2,5번 카메라 끄기
+299,카메라 5 off,/live/toggle?switch=OFF&no=5,2,5번 카메라 끄기
+291,카메라 4 OFF,/live/toggle?switch=OFF&no=4,2,
+292,4번 카메라 꺼,/live/toggle?switch=OFF&no=4,2,
+293,4번 카메라 꺼줘,/live/toggle?switch=OFF&no=4,2,
+294,4번 카메라 끄기 ,/live/toggle?switch=OFF&no=4,2,4번 카메라 끄기
+287,카메라 3 끄기,/live/toggle?switch=OFF&no=3,2,
+288,카메라 3 OFF,/live/toggle?switch=OFF&no=3,2,
+289,카메라 3꺼 줘 ,/live/toggle?switch=OFF&no=3,2,3번 카메라 끄기
+290,삼번 카메라 꺼 ,/live/toggle?switch=OFF&no=3,2,3번 카메라 꺼기
+283,2번 카메라 꺼,/live/toggle?switch=OFF&no=2,2,
+284,카메라 2 꺼 ,/live/toggle?switch=OFF&no=2,2,2번 카메라 끄기
+285,이번 카메라 꺼 ,/live/toggle?switch=OFF&no=2,2,2번 카메라 끄기
+286,카메라 2 off,/live/toggle?switch=OFF&no=2,2,2번 카메라 끄기
+277,1번 카메라 꺼,/live/toggle?switch=OFF&no=1,2,
+278,카메라 1 OFF,/live/toggle?switch=OFF&no=1,2,
+279,1번 카메라 꺼줘,/live/toggle?switch=OFF&no=1,2,
+280,카메라 1 OFF ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+281,1번 카메라 꺼 ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+282,1번 카메라 꺼 줘 ,/live/toggle?switch=OFF&no=1,2,1번 카메라 끄기
+1083,채팅 창 닫아,/closeWindows,99,
+1084,열린 창 끄기,/closeWindows,99,
+1085,윈도우 닫기,/closeWindows,99,
+1086,창 닫아,/closeWindows,99,
+1087,윈도우 창 꺼줘 ,/closeWindows,99,열린 창 모두 닫기
+1088,창 다 꺼 ,/closeWindows,99,전체 창 종료
+1089,창 닫아 ,/closeWindows,99,열린 창 모두 닫기
+1090,윈도우 모두 닫아 ,/closeWindows,99,모든 창 닫기
+1091,대화창 종료 ,/closeWindows,99,창 닫기
+1092,모든 창 끄기 ,/closeWindows,99,열린 창 모두 종료
+1093,히스토리 기록 창 닫기,/closeWindows,99,검사 기록 창 종료 명령
+1094,프로그램 기록창 닫아줘,/closeWindows,99,프로그램 기록 창 종료
+1077,채팅 초기화 해 ,/chat/clear,10,채팅/대화 초기화
+1078,대화 새로 시작 ,/chat/clear,10,채팅 새로 고침

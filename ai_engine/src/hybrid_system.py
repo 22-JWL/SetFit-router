@@ -64,37 +64,114 @@ class HybridSystem:
         routing_result = self.router.check_uncertainty(mc_preds)
 
 
-        # Case 1: OOS (도메인 밖) -> 즉시 거절
-        if routing_result["final_label_id"] == 2:
-             source = "Router (Blocked OOS)"
-             print(f"🛑 Blocked OOS query... ({source})")
-             final_response = {
-                 "answer": "죄송합니다. 저는 반도체 패키징 전문가라 그 질문에는 답할 수 없습니다.",
-                 "intent": "OUT_OF_SCOPE"
-             }
-        # Case 2: 불확실하거나(Uncertain), 의도가 '복합 분석(Complex)'인 경우 -> SLLM
-        else:
-            #routing_result["is_uncertain"] or routing_result["final_label_id"] == 1:
-            source = "SLLM (Reason: " + ("Uncertain" if routing_result["is_uncertain"] else "Complex Intent") + ")"
-            print(f"🚀 Routing to SLLM... ({source})")
-            # answer = self.sllm.generate_response(query)
-            final_response = {"answer": "LLM으로 넘어가서 분석", "intent": routing_result["final_label"]}
+        label_id = routing_result["final_label_id"]
+        label_name = routing_result["final_label"]
+        is_uncertain = routing_result["is_uncertain"]
 
-        # Case 3: 확실하고(Certain), 단순 질문인 경우 -> 라우터/DB 처리, 로컬 DB/규정집 검색
-        # else:
-        #     source = "Router/DB (Reason: Certain & Simple)"
-        #     print(f"✅ Handling locally... ({source})")
-        #     # 실제로는 여기서 SQL DB나 미리 정의된 매뉴얼을 조회합니다.
-        #     dummy_db_answer = f"[DB 검색 결과] '{query}'에 대한 스펙/절차 정보를 표시합니다."
-        #     final_response = {"answer": dummy_db_answer, "intent": routing_result["final_label"]}
+        # ============================================================
+        # Case 1: OUT_OF_SCOPE (라벨 12) - 도메인 밖 질문 즉시 거절
+        # ============================================================
+        if label_id == 12:
+            source = "Router (Blocked OOS)"
+            print(f"🛑 Blocked OOS query... ({source})")
+            final_response = {
+                "answer": "죄송합니다. 저는 반도체 패키징 전문가라 그 질문에는 답할 수 없습니다.",
+                "intent": "OUT_OF_SCOPE"
+            }
+
+        # ============================================================
+        # Case 2: vague (라벨 11) - 애매모호한 질문 -> SLLM으로 명확화 요청
+        # ============================================================
+        elif label_id == 11:
+            source = "SLLM (Reason: Vague Query)"
+            print(f"🤔 Vague query detected... ({source})")
+            final_response = {
+                "answer": "질문이 명확하지 않습니다. 좀 더 구체적으로 질문해 주시겠어요?",
+                "intent": "VAGUE"
+            }
+
+        # ============================================================
+        # Case 3: Uncertain (불확실) - 라우터가 확신하지 못함 -> SLLM 처리
+        # ============================================================
+        elif is_uncertain:
+            source = "SLLM (Reason: Uncertain)"
+            print(f"🚀 Routing to SLLM (Uncertain)... ({source})")
+            final_response = {
+                "answer": "LLM으로 넘어가서 분석",
+                "intent": label_name
+            }
+
+        # ============================================================
+        # Case 4: common_prompt (라벨 2) - 창이 안 열려있을 때 프롬프트
+        # ============================================================
+        elif label_id == 2:
+            source = "Router (Common Prompt)"
+            print(f"💬 Common prompt detected... ({source})")
+            final_response = {
+                "answer": "창이 안 열려있을 때 프롬프트.",
+                "intent": "COMMON_PROMPT"
+            }
+
+        # ============================================================
+        # Case 5: ConfirmLog (라벨 3) - Yes/No 확인 응답
+        # ============================================================
+        elif label_id == 3:
+            source = "Router (Confirm Log)"
+            print(f"✅ Confirm log detected... ({source})")
+            final_response = {
+                "answer": "확인되었습니다.",
+                "intent": "CONFIRM_LOG"
+            }
+
+        # ============================================================
+        # Case 6: 도메인 질문 (라벨 0, 1, 4~10) - 확실한 도메인 내 질문 -> DB 처리
+        # BGA(0), Calibration(1), History(4), LGA(5), Light(6),
+        # Mapping(7), QFN(8), Settings(9), Strip(10)
+        # ============================================================
+        else:
+            # 도메인별 처리 로직
+            domain_labels = {
+                0: ("BGA", "BGA_QUESTION"),
+                1: ("Calibration", "CALIBRATION_QUESTION"),
+                4: ("History", "HISTORY_QUESTION"),
+                5: ("LGA", "LGA_QUESTION"),
+                6: ("Light", "LIGHT_QUESTION"),
+                7: ("Mapping", "MAPPING_QUESTION"),
+                8: ("QFN", "QFN_QUESTION"),
+                9: ("Settings", "SETTINGS_QUESTION"),
+                10: ("Strip", "STRIP_QUESTION"),
+            }
+
+            if label_id in domain_labels:
+                domain_name, intent_name = domain_labels[label_id]
+                source = f"DB (Domain: {domain_name})"
+                print(f"📂 Domain query [{domain_name}]... ({source})")
+                final_response = {
+                    "answer": f"[{domain_name} DB 검색] '{query}'에 대한 정보를 조회합니다.",
+                    "intent": intent_name
+                }
+            else:
+                # 예상치 못한 라벨 - Fallback to SLLM
+                source = "SLLM (Fallback)"
+                print(f"⚠️ Unknown label {label_id}, fallback to SLLM... ({source})")
+                final_response = {
+                    "answer": "LLM으로 넘어가서 분석",
+                    "intent": label_name
+                }
 
         latency = time.time() - start_time
+        confidence_score = routing_result["agreement_ratio"]
+        uncertainty_score = 1.0 - confidence_score
 
         return {
             "query": query,
             "response": final_response["answer"],
             "detected_intent": final_response["intent"],
             "routing_source": source,
-            "uncertainty_score": 1.0 - routing_result["agreement_ratio"],
+            "confidence_score": confidence_score,  # 일치율 (0.0 ~ 1.0)
+            "confidence_pct": f"{confidence_score * 100:.1f}%",  # 퍼센트 형식
+            "uncertainty_score": uncertainty_score,  # 불확실성 점수 (0.0 ~ 1.0)
+            "uncertainty_pct": f"{uncertainty_score * 100:.1f}%",  # 퍼센트 형식
+            "is_uncertain": routing_result["is_uncertain"],
             "latency": f"{latency:.4f}s"
         }

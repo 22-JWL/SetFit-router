@@ -1,0 +1,11 @@
+id ,text,label,index,description
+200,mapping 임계값 자동 설정해줘,/teaching/mapping/update?propertyName=autoThresholdCommand&value=1,single,
+201,mapping Contamination 사이즈 200-300,/teaching/mapping/update?propertyName=ContaminationSize&value=200-300,single,
+202,mapping  티칭 창 임계값을 30-50으로,/teaching/mapping/update?propertyName=ContaminationThreshold&value=30-50,single,
+203,mapping 티칭 창 DontCare 탭 ROI 추가,/teaching/mapping/update?propertyName=DontCareRoi&value=add,single,
+204,mapping ForeignMaterial 사이즈를 90-150,/teaching/mapping/update?propertyName=ForeignMaterialSize&value=90-150,single,
+205,mapping ForeignMaterial threshold 2-100,/teaching/mapping/update?propertyName=ForeignMaterialThreshold&value=2-100,single,
+206,mapping Mark ROI 초기화 ,/teaching/mapping/update?propertyName=MarkRoi&value=reset,single,
+207,mapping Mark 탭 threshold 50-100,/teaching/mapping/update?propertyName=MarkThreshold&value=50-100,single,
+208,mapping RejectMark tab,/teaching/mapping/update?propertyName=moveTab&value=RejectMark,single,
+209,mapping 티칭 창 sawing 임계값 20-100,/teaching/mapping/update?propertyName=OutlineThreshold&value=20-100,single,

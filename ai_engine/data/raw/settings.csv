@@ -1,0 +1,268 @@
+id ,text,label,index,description
+604,QFN 패키지 오프셋 True로 ,/settings/update?propertyName=UseQfnPackageOffset&value=true,3,UseQfnPackageOffset 활성화
+600,UseMapPackageSize 활성화,/settings/update?propertyName=UseMapPackageSize&value=true,3,UseMapPackageSize 기능 활성화
+601,MapPackageSize 사용하도록,/settings/update?propertyName=UseMapPackageSize&value=true,3,UseMapPackageSize 활성화
+602,UseMapPackageSize 켜주세요,/settings/update?propertyName=UseMapPackageSize&value=true,3,UseMapPackageSize 활성화
+603,MapPackageSize 사용 설정,/settings/update?propertyName=UseMapPackageSize&value=true,3,UseMapPackageSize 사용 활성화
+597,UseMapPackageSize 해제,/settings/update?propertyName=UseMapPackageSize&value=false,3,UseMapPackageSize 기능 해제
+598,UseMapPackageSize 사용 안 함,/settings/update?propertyName=UseMapPackageSize&value=false,3,UseMapPackageSize 비활성화
+599,MapPackageSize 기능 끄기,/settings/update?propertyName=UseMapPackageSize&value=false,3,UseMapPackageSize 비활성화
+594,UseMapPackageOffset 켜주세요,/settings/update?propertyName=UseMapPackageOffset&value=true,3,UseMapPackageOffset 활성화
+595,UseMapPackageOffset 사용 설정,/settings/update?propertyName=UseMapPackageOffset&value=true,3,UseMapPackageOffset 활성화
+596,MapPackageOffset 기능 켜줘,/settings/update?propertyName=UseMapPackageOffset&value=true,3,UseMapPackageOffset 활성화
+590,UseMapPackageOffset 끄기,/settings/update?propertyName=UseMapPackageOffset&value=false,3,UseMapPackageOffset 비활성화
+591,MapPackageOffset 사용 해제,/settings/update?propertyName=UseMapPackageOffset&value=false,3,UseMapPackageOffset 비활성
+592,UseMapPackageOffset 사용 해제,/settings/update?propertyName=UseMapPackageOffset&value=false,3,UseMapPackageOffset 비활성화
+593,MapPackageOffset 기능 끄기,/settings/update?propertyName=UseMapPackageOffset&value=false,3,UseMapPackageOffset 비활성화
+587,UseMapNoDevice 켜줘,/settings/update?propertyName=UseMapNoDevice&value=true,3,UseMapNoDevice 활성화
+588,UseMapNoDevice 활성화해주세요,/settings/update?propertyName=UseMapNoDevice&value=true,3,UseMapNoDevice 활성화 요청
+589,MapNoDevice 사용 켜줘,/settings/update?propertyName=UseMapNoDevice&value=true,3,UseMapNoDevice 활성화
+583,UseMapNoDevice 끄기,/settings/update?propertyName=UseMapNoDevice&value=false,3,UseMapNoDevice 비활성화
+584,MapNoDevice 사용 안 함으로,/settings/update?propertyName=UseMapNoDevice&value=false,3,UseMapNoDevice 비활성
+585,UseMapNoDevice 끄기 부탁합니다,/settings/update?propertyName=UseMapNoDevice&value=false,3,UseMapNoDevice 비활성화 요청
+586,MapNoDevice 기능 끄기,/settings/update?propertyName=UseMapNoDevice&value=false,3,UseMapNoDevice 비활성화
+580,UseMapCornerDegree 활성화해줘,/settings/update?propertyName=UseMapCornerDegree&value=true,3,UseMapCornerDegree 활성화
+581,UseMapCornerDegree 사용 설정,/settings/update?propertyName=UseMapCornerDegree&value=true,3,UseMapCornerDegree 활성화
+582,MapCornerDegree 기능 켜기,/settings/update?propertyName=UseMapCornerDegree&value=true,3,UseMapCornerDegree 활성화
+576,UseMapCornerDegree 비활성,/settings/update?propertyName=UseMapCornerDegree&value=false,3,UseMapCornerDegree 비활성화
+577,MapCornerDegree 기능 끄기,/settings/update?propertyName=UseMapCornerDegree&value=false,3,UseMapCornerDegree 비활성화
+578,UseMapCornerDegree 사용 중지,/settings/update?propertyName=UseMapCornerDegree&value=false,3,UseMapCornerDegree 비활성화
+579,MapCornerDegree 사용 안 함,/settings/update?propertyName=UseMapCornerDegree&value=false,3,UseMapCornerDegree 비활성화
+569,LGA PadCount 기능 ON,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 활성화
+570,PadCount 옵션 활성,/settings/update?propertyName=UseLgaPadCount&value=true,3,
+571,PadCount 옵션 활성화,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 기능 활성화
+572,PadCount 즉시 적용,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 값 즉시 적용
+573,LGA PadCount 활성화 해 주세요,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 기능 켜기
+574,PadCount 기능을 사용하도록 해 주세요,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 기능 활성화
+575,LGA PadCount 사용 가능하게 해주세요,/settings/update?propertyName=UseLgaPadCount&value=true,3,PadCount 사용 기능 활성화
+562,LGA PadCount 기능 OFF,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 비활성화
+563,PadCount 옵션 비활성,/settings/update?propertyName=UseLgaPadCount&value=false,3,
+564,PadCount 옵션 끄기,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 기능 비활성
+565,PadCount 기능 해제,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 기능 완전 해제
+566,LGA PadCount 비활성화 할게요,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 기능 끄기
+567,PadCount 기능을 해제해 주세요,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 기능 비활성화
+568,LGA PadCount 기능 정지할게요,/settings/update?propertyName=UseLgaPadCount&value=false,3,PadCount 기능 비활성화
+555,LGA NoDevice 기능 켜기,/settings/update?propertyName=UseLgaNoDevice&value=true,3,NoDevice 기능 활성화
+556,NoDevice 기능 활성화,/settings/update?propertyName=UseLgaNoDevice&value=true,3,
+557,NoDevice 모드 켜기,/settings/update?propertyName=UseLgaNoDevice&value=true,3,NoDevice 옵션 활성화
+558,NoDevice 활성화,/settings/update?propertyName=UseLgaNoDevice&value=true,3,LGA NoDevice 활성화 명령
+559,LGA NoDevice 기능 활성화 해 주세요,/settings/update?propertyName=UseLgaNoDevice&value=true,3,NoDevice 기능 켜기
+560,NoDevice 기능 켜 주세요,/settings/update?propertyName=UseLgaNoDevice&value=true,3,NoDevice 기능 활성화 요청
+561,LGA NoDevice 옵션 켜 주세요,/settings/update?propertyName=UseLgaNoDevice&value=true,3,NoDevice 기능 활성화
+548,LGA NoDevice 기능 끄기,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 기능 비활성화
+549,NoDevice 설정 끔,/settings/update?propertyName=UseLgaNoDevice&value=false,3,
+550,NoDevice 기능 OFF,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 옵션 비활성
+551,NoDevice 완전 비활성,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 완전 끔
+552,LGA NoDevice 기능 해제 할게요,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 기능 끄기
+553,NoDevice 기능 끄기로 해 주세요,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 기능 비활성화 요청
+554,LGA NoDevice 옵션 끄겠습니다,/settings/update?propertyName=UseLgaNoDevice&value=false,3,NoDevice 기능 비활성화
+547,BGA 패키지사이즈 사용 꺼 ,/settings/update?propertyName=UseBgaPackageSize&value=false,3,UseBgaPackageSize 비활성화
+546,BGA 노디바이스 ON ,/settings/update?propertyName=UseBgaNoDevice&value=true,3,UseBgaNoDevice 활성화
+545,트레이 행 개수 8로 세팅해 ,/settings/update?propertyName=TrayRowCount&value=8,3,TrayRowCount=8 변경
+544,트레이 행 20개로 변경 ,/settings/update?propertyName=TrayRowCount&value=20,3,TrayRowCount=20
+543,트레이 열 10으로 변경해줘 ,/settings/update?propertyName=TrayColCount&value=10,3,TrayColCount=10 변경
+542,패키지 높이 15로 바꿔 줘 ,/settings/update?propertyName=PackageHeight&value=15,3,PackageHeight=15
+541,패키지 높이 12.3으로 변경 ,/settings/update?propertyName=PackageHeight&value=12.3,3,PackageHeight=12.3 변경
+540,Mark 개수 8로,/settings/update?propertyName=MarkCount&value=8,3,MarkCount 8로 설정
+539,MarkCount 7로 맞춰줘,/settings/update?propertyName=MarkCount&value=7,3,MarkCount 7로 설정
+538,MarkCount 6으로 변경,/settings/update?propertyName=MarkCount&value=6,3,MarkCount 6으로 변경
+537,MarkCount 5로 바꿔줘,/settings/update?propertyName=MarkCount&value=5,3,MarkCount 값 5로 변경
+536,Mark 개수를 4로 설정,/settings/update?propertyName=MarkCount&value=4,3,MarkCount 4로 설정
+535,MarkCount를 3으로,/settings/update?propertyName=MarkCount&value=3,3,MarkCount 값 3으로 설정
+534,MarkCount 2로 설정,/settings/update?propertyName=MarkCount&value=2,3,MarkCount 2로 설정
+533,맵 텍스트 오프셋X 1로 바꿔 ,/settings/update?propertyName=MapTextOffsetX&value=1,3,MapTextOffsetX=1
+532,MappingSawOffset Y축 0.4로,/settings/update?propertyName=MappingSawOffsetY&value=0.4,3,MappingSawOffset Y 0.4
+531,MappingSawOffsetY 0.35로 조정,/settings/update?propertyName=MappingSawOffsetY&value=0.35,3,MappingSawOffset Y 0.35로
+530,MappingSawOffsetY 0.28로 조정,/settings/update?propertyName=MappingSawOffsetY&value=0.28,3,MappingSawOffset Y 0.28
+529,MappingSawOffsetY 0.22로 세팅,/settings/update?propertyName=MappingSawOffsetY&value=0.22,3,MappingSawOffset Y 0.22
+528,MappingSawOffsetY 0.2로,/settings/update?propertyName=MappingSawOffsetY&value=0.2,3,MappingSawOffset Y 0.2로 설정
+527,MappingSawOffsetY를 0.18로,/settings/update?propertyName=MappingSawOffsetY&value=0.18,3,MappingSawOffset Y 0.18
+526,MappingSawOffsetY 0.15로,/settings/update?propertyName=MappingSawOffsetY&value=0.15,3,MappingSawOffset Y 0.15
+525,MappingSawOffset X축 0.45로,/settings/update?propertyName=MappingSawOffsetX&value=0.45,3,MappingSawOffset X 0.45
+524,MappingSawOffsetX 0.4로 변경,/settings/update?propertyName=MappingSawOffsetX&value=0.4,3,MappingSawOffset X 0.4로
+523,MappingSawOffsetX 0.38로 세팅,/settings/update?propertyName=MappingSawOffsetX&value=0.38,3,MappingSawOffset X 0.38
+522,MappingSawOffsetX 0.32로 변경,/settings/update?propertyName=MappingSawOffsetX&value=0.32,3,MappingSawOffset X 0.32
+521,MappingSawOffsetX를 0.3으로,/settings/update?propertyName=MappingSawOffsetX&value=0.3,3,MappingSawOffset X 0.3
+520,MappingSawOffsetX 0.2로 설정,/settings/update?propertyName=MappingSawOffsetX&value=0.2,3,MappingSawOffset X 0.2로
+519,MappingSawOffsetX 0.15로,/settings/update?propertyName=MappingSawOffsetX&value=0.15,3,MappingSawOffset X 0.15
+518,MappingSawOffsetColor Teal로,/settings/update?propertyName=MappingSawOffsetColor&value=Teal,3,MappingSawOffset 색상 Teal
+517,MappingSawOffsetColor Purple로,/settings/update?propertyName=MappingSawOffsetColor&value=Purple,3,MappingSawOffset 색상 Purple
+516,MappingSawOffsetColor Navy로,/settings/update?propertyName=MappingSawOffsetColor&value=Navy,3,MappingSawOffset 색상 Navy
+515,MappingSawOffsetColor Lime으로 변경,/settings/update?propertyName=MappingSawOffsetColor&value=Lime,3,MappingSawOffset 색상 Lime
+514,MappingSawOffsetColor Gold로,/settings/update?propertyName=MappingSawOffsetColor&value=Gold,3,MappingSawOffset 색상 Gold
+513,MappingSawOffsetColor Cyan으로 변경,/settings/update?propertyName=MappingSawOffsetColor&value=Cyan,3,MappingSawOffset 색상 Cyan
+512,MappingSawOffset 색상 Coral로,/settings/update?propertyName=MappingSawOffsetColor&value=Coral,3,MappingSawOffset 색상 Coral
+511,MapPackageType STRIP으로,/settings/update?propertyName=MapPackageType&value=STRIP,3,MapPackageType STRIP로 변경
+508,맵 패키지 타입 QFN으로 해 ,/settings/update?propertyName=MapPackageType&value=QFN,3,MapPackageType=QFN
+509,MapPackageType QFN으로 설정,/settings/update?propertyName=MapPackageType&value=QFN,3,MapPackageType을 QFN으로 설정
+510,MapPackageType을 QFN으로 바꿔주세요,/settings/update?propertyName=MapPackageType&value=QFN,3,MapPackageType QFN으로
+506,매핑 패키지 타입을 LGA로 바꿔주세요,/settings/update?propertyName=MapPackageType&value=LGA,3,MapPackageType을 LGA로 변경
+507,MapPackageType LGA로 변경해주세요,/settings/update?propertyName=MapPackageType&value=LGA,3,MapPackageType LGA로 변경
+503,맵 패키지 타입 BGA로 변경 ,/settings/update?propertyName=MapPackageType&value=BGA,3,MapPackageType=BGA
+504,MapPackageType을 BGA로 바꿔줘,/settings/update?propertyName=MapPackageType&value=BGA,3,MapPackageType을 BGA로 변경
+505,매핑 패키지 타입 BGA로 설정,/settings/update?propertyName=MapPackageType&value=BGA,3,MapPackageType BGA로 설정
+502,MapPackageSize 가로 16.8로,/settings/update?propertyName=MapPackageSizeWidth&value=16.8,3,MapPackageSize 폭 16.8
+501,MapPackageSizeWidth 15.5로,/settings/update?propertyName=MapPackageSizeWidth&value=15.5,3,MapPackageSize 폭 15.5로 변경
+500,MapPackageSizeWidth 14로 설정,/settings/update?propertyName=MapPackageSizeWidth&value=14,3,MapPackageSize 폭 14 설정
+499,MapPackageSize 가로를 13.8로,/settings/update?propertyName=MapPackageSizeWidth&value=13.8,3,MapPackageSize 폭 13.8
+498,MapPackageSizeWidth 12로 설정,/settings/update?propertyName=MapPackageSizeWidth&value=12,3,MapPackageSize 폭 12로 설정
+497,MapPackageSizeWidth 11.2로 변경,/settings/update?propertyName=MapPackageSizeWidth&value=11.2,3,MapPackageSize 폭 11.2
+496,MapPackageSizeWidth 10.5로,/settings/update?propertyName=MapPackageSizeWidth&value=10.5,3,MapPackageSize 폭 10.5
+495,MapPackageSizeHeight 9로 설정,/settings/update?propertyName=MapPackageSizeHeight&value=9,3,MapPackageSize 높이 9
+494,MapPackageSizeHeight 8.3으로 변경,/settings/update?propertyName=MapPackageSizeHeight&value=8.3,3,MapPackageSize 높이 8.3으로
+493,MapPackageSize 세로 7.8로,/settings/update?propertyName=MapPackageSizeHeight&value=7.8,3,MapPackageSize 높이 7.8
+492,MapPackageSize 세로를 7.2로,/settings/update?propertyName=MapPackageSizeHeight&value=7.2,3,MapPackageSize 높이 7.2
+491,MapPackageSizeHeight 6.5로 변경,/settings/update?propertyName=MapPackageSizeHeight&value=6.5,3,MapPackageSize 높이 6.5
+490,MapPackageSizeHeight 6으로,/settings/update?propertyName=MapPackageSizeHeight&value=6,3,MapPackageSize 높이 6으로
+489,MapPackageSizeHeight 5.5로,/settings/update?propertyName=MapPackageSizeHeight&value=5.5,3,MapPackageSize 높이 5.5
+488,MapPackageSizeColor Yellow로 바꿔,/settings/update?propertyName=MapPackageSizeColor&value=Yellow,3,MapPackageSize 색상 Yellow
+487,MapPackageSizeColor Teal로 바꿔,/settings/update?propertyName=MapPackageSizeColor&value=Teal,3,MapPackageSize 색상 Teal
+486,MapPackageSize 색상 Purple로,/settings/update?propertyName=MapPackageSizeColor&value=Purple,3,MapPackageSize 색상 Purple
+485,MapPackageSizeColor Pink로,/settings/update?propertyName=MapPackageSizeColor&value=Pink,3,MapPackageSize 색상 Pink
+484,MapPackageSizeColor를 Magenta로,/settings/update?propertyName=MapPackageSizeColor&value=Magenta,3,MapPackageSize 색상 Magenta
+483,MapPackageSizeColor Green으로,/settings/update?propertyName=MapPackageSizeColor&value=Green,3,MapPackageSize 색상 Green
+482,MapPackageSizeColor Black으로,/settings/update?propertyName=MapPackageSizeColor&value=Black,3,MapPackageSize 색상 Black
+481,MapPackageOffset 색상 Silver로,/settings/update?propertyName=MapPackageOffsetColor&value=Silver,3,MapPackageOffset 색상 Silver
+480,MapPackageOffsetColor Red로,/settings/update?propertyName=MapPackageOffsetColor&value=Red,3,MapPackageOffset 색상 Red
+479,MapPackageOffsetColor Orange로 변경,/settings/update?propertyName=MapPackageOffsetColor&value=Orange,3,MapPackageOffset 색상 Orange
+478,MapPackageOffsetColor Navy로 변경,/settings/update?propertyName=MapPackageOffsetColor&value=Navy,3,MapPackageOffset 색상 Navy
+477,MapPackageOffsetColor Lime으로,/settings/update?propertyName=MapPackageOffsetColor&value=Lime,3,MapPackageOffset 색상 Lime
+476,MapPackageOffsetColor Gray로,/settings/update?propertyName=MapPackageOffsetColor&value=Gray,3,MapPackageOffset 색상 Gray
+475,MapPackageOffsetColor Blue로,/settings/update?propertyName=MapPackageOffsetColor&value=Blue,3,MapPackageOffset 색상 Blue
+474,MapNoDeviceColor Yellow로,/settings/update?propertyName=MapNoDeviceColor&value=Yellow,3,MapNoDevice 색상 Yellow
+473,MapNoDeviceColor를 Red로,/settings/update?propertyName=MapNoDeviceColor&value=Red,3,MapNoDevice 색상 Red
+472,MapNoDevice 색상 Purple로,/settings/update?propertyName=MapNoDeviceColor&value=Purple,3,MapNoDevice 색상 Purple
+471,MapNoDeviceColor Orange로 바꿔주세요,/settings/update?propertyName=MapNoDeviceColor&value=Orange,3,MapNoDevice 색상 Orange
+470,MapNoDevice 색상 Green으로,/settings/update?propertyName=MapNoDeviceColor&value=Green,3,MapNoDevice 색상 Green
+469,MapNoDeviceColor를 Cyan으로 바꿔줘,/settings/update?propertyName=MapNoDeviceColor&value=Cyan,3,MapNoDevice 색상 Cyan
+468,MapNoDeviceColor Blue로 변경,/settings/update?propertyName=MapNoDeviceColor&value=Blue,3,MapNoDevice 색상 Blue
+467,LgaRejectMarkColor를 Teal로 변경해주실래요?,/settings/update?propertyName=LgaRejectMarkColor&value=Teal,3,RejectMark 색상 변경
+466,LGA RejectMark 색상을 Silver로,/settings/update?propertyName=LgaRejectMarkColor&value=Silver,3,RejectMark 색상 변경
+464,RejectMark 색상 Purple,/settings/update?propertyName=LgaRejectMarkColor&value=Purple,3,RejectMark 색상 Purple
+465,RejectMarkColor를 Purple로 바꿔 주세요,/settings/update?propertyName=LgaRejectMarkColor&value=Purple,3,RejectMark 색상 변경
+462,LGA RejectMarkColor Orange로 바꿔줘,/settings/update?propertyName=LgaRejectMarkColor&value=Orange,3,RejectMark 색상 변경
+463,RejectMark 색상을 Orange로 줘요,/settings/update?propertyName=LgaRejectMarkColor&value=Orange,3,RejectMark 색상 조정
+461,RejectMark 표시 색 Green,/settings/update?propertyName=LgaRejectMarkColor&value=Green,3,RejectMark 색상 Green
+460,LGA RejectMarkColor를 Coral로,/settings/update?propertyName=LgaRejectMarkColor&value=Coral,3,RejectMark 색상 Coral
+459,RejectMark 색상 Blue로 변경,/settings/update?propertyName=LgaRejectMarkColor&value=Blue,3,RejectMark 색상 Blue 변경
+456,RejectMarkColor를 Black로,/settings/update?propertyName=LgaRejectMarkColor&value=Black,3,
+457,RejectMarkColor Black,/settings/update?propertyName=LgaRejectMarkColor&value=Black,3,RejectMark 색상 Black
+458,LgaRejectMarkColor 검정으로 세팅 했어요,/settings/update?propertyName=LgaRejectMarkColor&value=Black,3,RejectMark 색상 검정
+455,LgaPadPitch 1.05,/settings/update?propertyName=LgaPadPitch&value=1.05,3,PadPitch 1.05 세팅
+454,LgaPadPitch 값 0.95로,/settings/update?propertyName=LgaPadPitch&value=0.95,3,PadPitch 값을 0.95로 지정
+453,PadPitch를 0.85로 만들어 주세요,/settings/update?propertyName=LgaPadPitch&value=0.85,3,PadPitch 값 변경
+452,LGA PadPitch 0.8로 맞춰줘,/settings/update?propertyName=LgaPadPitch&value=0.8,3,Pad Pitch 설정
+451,LgaPadPitch 값을 0.78로 바꿔 주세요,/settings/update?propertyName=LgaPadPitch&value=0.78,3,PadPitch 값 변경
+450,LgaPadPerimeter 4.8,/settings/update?propertyName=LgaPadPerimeter&value=4.8,3,Pad 둘레값 4.8
+449,LgaPadPerimeter 4.2,/settings/update?propertyName=LgaPadPerimeter&value=4.2,3,Pad 둘레값을 4.2로
+448,PadPerimeter를 4로 해 주세요,/settings/update?propertyName=LgaPadPerimeter&value=4,3,PadPerimeter 값 조정
+447,LgaPadPerimeter를 3.91까지 조정해 주세요,/settings/update?propertyName=LgaPadPerimeter&value=3.91,3,Pad 둘레 값 조정
+446,LGA PadPerimeter 값을 3.7로,/settings/update?propertyName=LgaPadPerimeter&value=3.7,3,Pad 둘레 변경
+445,PadOffsetX를 0.7로 조절해 주세요,/settings/update?propertyName=LgaPadOffsetX&value=0.7,3,PadOffsetX 변경
+444,PadOffsetX는 0.5,/settings/update?propertyName=LgaPadOffsetX&value=0.5,3,PadOffsetX 값 0.5 지정
+443,LgaPadOffsetX를 0.45로 변경해 주세요,/settings/update?propertyName=LgaPadOffsetX&value=0.45,3,Pad Offset X 조정
+442,LGA PadOffsetX 0.4로 변경,/settings/update?propertyName=LgaPadOffsetX&value=0.4,3,Pad Offset X 조정
+441,PadOffsetX 0.25 적용,/settings/update?propertyName=LgaPadOffsetX&value=0.25,3,PadOffsetX 값을 0.25로 설정
+440,PadOffsetT 0.12로 맞춤,/settings/update?propertyName=LgaPadOffsetT&value=0.12,3,PadOffsetT 0.12
+439,LgaPadOffsetT를 0.1로 변경 바랍니다,/settings/update?propertyName=LgaPadOffsetT&value=0.1,3,Pad Offset T 변경
+438,PadOffsetT를 0.09로 조정해 주세요,/settings/update?propertyName=LgaPadOffsetT&value=0.09,3,PadOffsetT 변경
+437,PadOffsetT 값 0.08,/settings/update?propertyName=LgaPadOffsetT&value=0.08,3,PadOffsetT 0.08로 조정
+436,LGA PadOffsetT 0.06으로 세팅,/settings/update?propertyName=LgaPadOffsetT&value=0.06,3,Pad Offset T 조정
+435,LGA PadCountColor를 White로,/settings/update?propertyName=LgaPadCountColor&value=White,3,PadCount 색상 White
+434,LGA PadCount 색상 Red로 바꿔줘,/settings/update?propertyName=LgaPadCountColor&value=Red,3,PadCount 색상 변경
+433,PadCount 색상 Olive로,/settings/update?propertyName=LgaPadCountColor&value=Olive,3,PadCount 색상 Olive로 지정
+432,PadCount 색상 Gray,/settings/update?propertyName=LgaPadCountColor&value=Gray,3,
+430,PadCount 색상 Cyan,/settings/update?propertyName=LgaPadCountColor&value=Cyan,3,PadCount 색상 Cyan 적용
+431,PadCount 색상을 Cyan으로 바꿔 주세요,/settings/update?propertyName=LgaPadCountColor&value=Cyan,3,PadCount 색상 변경
+429,LgaPadCount 색상을 Coral로 바꿔 주세요,/settings/update?propertyName=LgaPadCountColor&value=Coral,3,PadCount 색상 변경
+428,PadArea를 15로 설정해 주세요,/settings/update?propertyName=LgaPadArea&value=15,3,PadArea 값 변경
+427,PadArea를 14로 변겅,/settings/update?propertyName=LgaPadArea&value=14,3,PadArea 14로 변겅
+426,LgaPadArea 13으로 설정해 주시겠어요?,/settings/update?propertyName=LgaPadArea&value=13,3,Pad 면적 조정
+425,PadArea를 12로 변경,/settings/update?propertyName=LgaPadArea&value=12,3,PadArea 값을 12로 변경
+424,LGA PadArea 10으로 설정,/settings/update?propertyName=LgaPadArea&value=10,3,Pad 면적 조정
+423,LGA PackageSizeWidth 8.9,/settings/update?propertyName=LgaPackageSizeWidth&value=8.9,3,패키지 폭 8.9로 변경
+422,PackageSizeWidth를 14.4로 늘려 주세요,/settings/update?propertyName=LgaPackageSizeWidth&value=14.4,3,Package 폭 조정
+421,LgaPackageSizeWidth를 14.2로 조정해 주세요,/settings/update?propertyName=LgaPackageSizeWidth&value=14.2,3,Package 폭 조절
+420,LGA PackageSizeWidth 13.4,/settings/update?propertyName=LgaPackageSizeWidth&value=13.4,3,패키지 가로 13.4
+419,LGA PackageSizeWidth 12.2,/settings/update?propertyName=LgaPackageSizeWidth&value=12.2,3,
+418,LGA PackageSizeWidth 11.5로,/settings/update?propertyName=LgaPackageSizeWidth&value=11.5,3,패키지 폭 변경
+417,LGA PackageSizeWidth 10으로,/settings/update?propertyName=LgaPackageSizeWidth&value=10,3,패키지 가로크기 10
+416,LGA PackageSizeHeight 8.1,/settings/update?propertyName=LgaPackageSizeHeight&value=8.1,3,패키지 높이 8.1
+415,PackageSizeHeight를 7.5로 맞춰 주세요,/settings/update?propertyName=LgaPackageSizeHeight&value=7.5,3,Package 높이 조정
+414,LgaPackageSizeHeight를 7.3으로 바꿔주세요,/settings/update?propertyName=LgaPackageSizeHeight&value=7.3,3,Package 높이 조절
+413,LGA PackageSizeHeight 6.2로,/settings/update?propertyName=LgaPackageSizeHeight&value=6.2,3,패키지 높이 변경
+412,LGA PackageSizeHeight 6.1,/settings/update?propertyName=LgaPackageSizeHeight&value=6.1,3,패키지 높이 6.1로 변경
+411,LGA PackageSizeHeight 5.3,/settings/update?propertyName=LgaPackageSizeHeight&value=5.3,3,
+410,LGA PackageSizeHeight 5로,/settings/update?propertyName=LgaPackageSizeHeight&value=5,3,패키지 세로크기 5
+408,NoDevice 색상 Teal로,/settings/update?propertyName=LgaNoDeviceColor&value=Teal,3,
+409,NoDevice 색상 선택 Teal,/settings/update?propertyName=LgaNoDeviceColor&value=Teal,3,NoDevice 색상 Teal 지정
+407,NoDevice 색상을 Red로 설정해 주세요,/settings/update?propertyName=LgaNoDeviceColor&value=Red,3,NoDevice 색상 변경 요청
+406,NoDeviceColor를 Navy로 변경,/settings/update?propertyName=LgaNoDeviceColor&value=Navy,3,NoDevice 색상 Navy 적용
+405,LGA NoDeviceColor를 Gold로,/settings/update?propertyName=LgaNoDeviceColor&value=Gold,3,NoDevice 색상 Gold
+404,LgaNoDevice 색상을 Crimson으로 설정해 주세요,/settings/update?propertyName=LgaNoDeviceColor&value=Crimson,3,NoDevice 색상 변경
+403,LGA NoDevice 색상 Blue로 부탁,/settings/update?propertyName=LgaNoDeviceColor&value=Blue,3,NoDevice 색상 지정
+402,LeadSizeWidth 2.4로,/settings/update?propertyName=LgaLeadSizeWidth&value=2.4,3,리드폭 2.4 지정
+401,LeadSizeWidth를 2.1로 조정해 주세요,/settings/update?propertyName=LgaLeadSizeWidth&value=2.1,3,LeadSizeWidth 값 변경
+400,LgaLeadSizeWidth를 1.9로 저희가 설정했어요,/settings/update?propertyName=LgaLeadSizeWidth&value=1.9,3,Lead 크기 폭 설정
+399,리드 폭 1.8 설정,/settings/update?propertyName=LgaLeadSizeWidth&value=1.8,3,
+398,LGA LeadSizeWidth 1.7로 변경,/settings/update?propertyName=LgaLeadSizeWidth&value=1.7,3,리드폭 변경
+397,LGA LeadSizeWidth를 1.5로,/settings/update?propertyName=LgaLeadSizeWidth&value=1.5,3,리드 폭 1.5 설정
+396,LeadSizeWidth 설정 1.2,/settings/update?propertyName=LgaLeadSizeWidth&value=1.2,3,리드 폭 1.2로
+395,LgaLeadPitch 색상을 Purple로 해주세요,/settings/update?propertyName=LgaLeadPitchColor&value=Purple,3,LeadPitch 색상 변경
+394,LeadPitch 색깔 Pink로,/settings/update?propertyName=LgaLeadPitchColor&value=Pink,3,LeadPitch 색상 Pink 설정
+392,LeadPitch 색 Olive로,/settings/update?propertyName=LgaLeadPitchColor&value=Olive,3,
+393,LeadPitch색을 Olive로,/settings/update?propertyName=LgaLeadPitchColor&value=Olive,3,LeadPitch 색상 Olive 세팅
+390,LGALeadPitch 색 Navy로,/settings/update?propertyName=LgaLeadPitchColor&value=Navy,3,LGA 리드 피치 색 Navy
+391,LeadPitch색을 Navy로 설정해 주세요,/settings/update?propertyName=LgaLeadPitchColor&value=Navy,3,LeadPitch 색상 변경
+389,LGA LeadPitch 색 Black으로,/settings/update?propertyName=LgaLeadPitchColor&value=Black,3,LeadPitch 색상 변경
+388,LgaLeadPitch를 1.7로 세팅 부탁드립니다,/settings/update?propertyName=LgaLeadPitch&value=1.7,3,Lead Pitch 세팅
+387,LeadPitch 값을 1.6으로,/settings/update?propertyName=LgaLeadPitch&value=1.6,3,LeadPitch 값을 1.6으로 변경
+386,LeadPitch를 1.4로 맞춰 주세요,/settings/update?propertyName=LgaLeadPitch&value=1.4,3,LeadPitch 값 변경
+385,LeadPitch 1.3,/settings/update?propertyName=LgaLeadPitch&value=1.3,3,LeadPitch 값을 1.3으로 설정
+384,LGA LeadPitch 1.2로 조정,/settings/update?propertyName=LgaLeadPitch&value=1.2,3,Lead Pitch 설정
+383,LgaLeadPerimeter는 3.6,/settings/update?propertyName=LgaLeadPerimeter&value=3.6,3,리드 둘레 3.6 세팅
+382,LgaLeadPerimeter를 3.3으로 바꿀게요,/settings/update?propertyName=LgaLeadPerimeter&value=3.3,3,Lead Perimeter 조정
+381,LeadPerimeter을 3로 해 주세요,/settings/update?propertyName=LgaLeadPerimeter&value=3,3,LeadPerimeter 설정
+380,LGA LeadPerimeter 2.8로 변경,/settings/update?propertyName=LgaLeadPerimeter&value=2.8,3,Lead 주변 길이 조정
+379,LgaLeadPerimeter 2.7,/settings/update?propertyName=LgaLeadPerimeter&value=2.7,3,리드 둘레를 2.7로 설정
+378,LeadOffsetY를 0.3으로 맞춰 주세요,/settings/update?propertyName=LgaLeadOffsetY&value=0.3,3,LeadOffsetY 조정
+377,LgaLeadOffsetY를 0.28로 맞춰주세요,/settings/update?propertyName=LgaLeadOffsetY&value=0.28,3,Lead Offset Y 조정
+376,LGA LeadOffsetY 0.25로,/settings/update?propertyName=LgaLeadOffsetY&value=0.25,3,Lead Offset Y 변경
+375,LeadOffsetY 0.22로 맞추기,/settings/update?propertyName=LgaLeadOffsetY&value=0.22,3,LeadOffsetY 0.22조정
+374,LeadOffsetY 0.19로 맞춤,/settings/update?propertyName=LgaLeadOffsetY&value=0.19,3,LeadOffsetY 값을 0.19로
+373,LgaLeadArea를 8로 설정합니다,/settings/update?propertyName=LgaLeadArea&value=8,3,Lead 면적 조정
+371,LeadArea 7로 조정,/settings/update?propertyName=LgaLeadArea&value=7,3,LeadArea 7 설정
+372,LeadArea를 7로 재설정해 주세요,/settings/update?propertyName=LgaLeadArea&value=7,3,LeadArea 값 설정
+370,LGA LeadArea 6.8로,/settings/update?propertyName=LgaLeadArea&value=6.8,3,Lead 면적 변경
+369,LeadArea 수치 11,/settings/update?propertyName=LgaLeadArea&value=11,3,LeadArea를 11로 설정
+368,LGA CornerDegree를 7.0으로,/settings/update?propertyName=LgaCornerDegree&value=7.0,3,코너 각도 7.0 설정
+367,CornerDegree를 4.2로,/settings/update?propertyName=LgaCornerDegree&value=4.2,3,CornerDegree 4.2로 설정
+366,LgaCornerDegree를 3.6으로 조절해 주세요,/settings/update?propertyName=LgaCornerDegree&value=3.6,3,코너 각도 조절
+365,LGA CornerDegree 3.2로 세팅,/settings/update?propertyName=LgaCornerDegree&value=3.2,3,코너각도 설정
+364,CornerDegree 값을 3.1로 맞춰 주세요,/settings/update?propertyName=LgaCornerDegree&value=3.1,3,CornerDegree 값 변경
+363,CornerDegree 2.7로 조정,/settings/update?propertyName=LgaCornerDegree&value=2.7,3,코너 각도를 2.7로 변경
+362,코너 각도 2.5,/settings/update?propertyName=LgaCornerDegree&value=2.5,3,
+361,LGAChippingColor를 Violet로,/settings/update?propertyName=LgaChippingColor&value=Violet,3,LGA 칩핑 색상 Violet
+359,ChippingColor를 Salmon으로,/settings/update?propertyName=LgaChippingColor&value=Salmon,3,
+360,ChippingColor Salmon 선택,/settings/update?propertyName=LgaChippingColor&value=Salmon,3,Chipping 색상 Salmon 지정
+358,LGA ChippingColor Pink색 선택,/settings/update?propertyName=LgaChippingColor&value=Pink,3,Chipping 색상 변경
+357,ChippingColor를 Orange로 지정해 주세요,/settings/update?propertyName=LgaChippingColor&value=Orange,3,Chipping 색상 변경
+356,ChippingColor를 Lime으로,/settings/update?propertyName=LgaChippingColor&value=Lime,3,Chipping 색상 Lime
+355,LgaChippingColor가 Gray로 변경됐어요,/settings/update?propertyName=LgaChippingColor&value=Gray,3,Chipping 색상 변경
+354,PRS 기능 켜 ,/settings/update?propertyName=IsPrsUsed&value=true,3,IsPrsUsed 활성화
+350,IsMappingUsed 활성화해주세요,/settings/update?propertyName=IsMappingUsed&value=true,3,IsMappingUsed 기능 활성화
+351,IsMappingUsed 기능 켜 주세요,/settings/update?propertyName=IsMappingUsed&value=true,3,IsMappingUsed 활성화 요청
+352,IsMappingUsed 사용 설정,/settings/update?propertyName=IsMappingUsed&value=true,3,IsMappingUsed 활성화
+353,매핑 사용 여부 켜줘,/settings/update?propertyName=IsMappingUsed&value=true,3,IsMappingUsed 사용 활성화
+346,불량맵핑 사용 false로 설정 ,/settings/update?propertyName=IsMappingUsed&value=false,3,IsMappingUsed 비활성화
+347,IsMappingUsed 비활성화,/settings/update?propertyName=IsMappingUsed&value=false,3,IsMappingUsed 기능 비활성화
+348,IsMappingUsed 사용 안 함,/settings/update?propertyName=IsMappingUsed&value=false,3,IsMappingUsed 비활성화
+349,매핑 사용 여부 비활성화,/settings/update?propertyName=IsMappingUsed&value=false,3,IsMappingUsed 비활성화
+345,바코드 켜줘 ,/settings/update?propertyName=IsBarcodeUsed&value=true,3,IsBarcodeUsed 활성화
+344,바코드 사용 false ,/settings/update?propertyName=IsBarcodeUsed&value=false,3,IsBarcodeUsed 비활성화
+343,카메라 FOV 행 5로 바꿔 ,/settings/update?propertyName=FovRowCount&value=5,3,FovRowCount=5 바꿈
+342,FOV 열 개수 4로 맞춰 ,/settings/update?propertyName=FovColCount&value=4,3,FovColCount=4
+341,블록 행 개수 6으로 지정 ,/settings/update?propertyName=BlockRowCount&value=6,3,BlockRowCount=6
+340,블록 열 개수 7로 해 ,/settings/update?propertyName=BlockColCount&value=7,3,BlockColCount=7 변경
+339,BGA 노디바이스 색상 Red로 ,/settings/update?propertyName=BgaNoDeviceColor&value=Red,3,BgaNoDeviceColor=Red
+338,BGA 코너 각도 2.5로 세팅 ,/settings/update?propertyName=BgaCornerDegree&value=2.5,3,BgaCornerDegree=2.5

@@ -1,0 +1,63 @@
+id ,text,label,index,description
+1015,calibration 임계값 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+1016,캘리창 threshold 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+1017,캘리브레이션 threshold 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+1018,캘리브레이션 임계값 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+1019,임계값 100-200 설정해 ,/calibration/update?propertyName=threshold&value=100-200,6,임계값 설정
+1011,보정 탭 비젼으로 바꿔줘,/calibration/update?propertyName=tab&value=vision,6,보정 탭 변경
+1012,캘리 창 탭 비젼으로 바꿔줘 ,/calibration/update?propertyName=tab&value=vision,6,보정 탭 변경
+1013,캘리브레이션 탭 vision,/calibration/update?propertyName=tab&value=vision,6,보정 탭 변경
+1014,calibration vision,/calibration/update?propertyName=tab&value=vision,6,보정 탭 변경
+1007,보정 탭 트레이로 바꿔줘,/calibration/update?propertyName=tab&value=tray,6,보정 탭 변경
+1008,캘리 창 탭 트레이로 바꿔줘 ,/calibration/update?propertyName=tab&value=tray,6,보정 탭 변경
+1009,캘리브레이션 탭 tray,/calibration/update?propertyName=tab&value=tray,6,보정 탭 변경
+1010,calibration tray,/calibration/update?propertyName=tab&value=tray,6,보정 탭 변경
+1002,보정 탭 바꿔줘 ,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+1003,보정 탭 세팅으로 바꿔줘,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+1004,캘리 창 탭 세팅으로 바꿔줘 ,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+1005,캘리브레이션 탭 setting,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+1006,calibration setting,/calibration/update?propertyName=tab&value=setting,6,보정 탭 변경
+998,보정 탭 패드로 바꿔줘,/calibration/update?propertyName=tab&value=pad,6,보정 탭 변경
+999,캘리 창 탭 패드로 바꿔줘 ,/calibration/update?propertyName=tab&value=pad,6,보정 탭 변경
+1000,캘리브레이션 탭 pad,/calibration/update?propertyName=tab&value=pad,6,보정 탭 변경
+1001,calibration pad,/calibration/update?propertyName=tab&value=pad,6,보정 탭 변경
+994,보정 탭 바텀으로 바꿔줘,/calibration/update?propertyName=tab&value=bottom,6,보정 탭 변경
+995,캘리 창 탭 바텀으로 바꿔줘,/calibration/update?propertyName=tab&value=bottom,6,보정 탭 변경
+996,캘리브레이션 탭 bottom,/calibration/update?propertyName=tab&value=bottom,6,보정 탭 변경
+997,calibration bottom,/calibration/update?propertyName=tab&value=bottom,6,보정 탭 변경
+990,보정 창 MULTIOBJECT 기준 설정,/calibration/update?propertyName=select&value=MULTIOBJECT,6,
+991,보정 창 물체 기준을 Multi-Object로,/calibration/update?propertyName=select&value=MULTIOBJECT,6,
+992,캡처할 물체의 기준을 여러 개체를 기준으로 사용,/calibration/update?propertyName=select&value=MULTIOBJECT,6,
+993,보정 창 여러 개체를 기준으로,/calibration/update?propertyName=select&value=MULTIOBJECT,6,
+987,보정 창 CENTER 기준 설정,/calibration/update?propertyName=select&value=CENTER,6,
+988,캡처할 물체의 기준을 여러 개체의 중심에 있는 개체를 기준으로 사용해,/calibration/update?propertyName=select&value=CENTER,6,
+989,보정 창 여러 개체의 중심에 있는 개체를 기준으로,/calibration/update?propertyName=select&value=CENTER,6,
+984,보정 창 BIGGEST 기준 설정,/calibration/update?propertyName=select&value=BIGGEST,6,
+985,캡처할 물체의 기준을 여러 개체 중 가장 큰 개체를 기준으로 사용,/calibration/update?propertyName=select&value=BIGGEST,6,
+986,보정 창 여러 개체 중 가장 큰 개체를 기준으로 사용,/calibration/update?propertyName=select&value=BIGGEST,6,
+979,로이 초기화,/calibration/update?propertyName=roi&value=recreate,6,ROI 생성
+980,로이 재생성,/calibration/update?propertyName=roi&value=recreate,6,ROI 생성
+981,로이 초기화 해,/calibration/update?propertyName=roi&value=recreate,6,ROI 생성
+982,로이 초기화 시켜줘,/calibration/update?propertyName=roi&value=recreate,6,ROI 생성
+983,로이 다시 생성,/calibration/update?propertyName=roi&value=recreate,6,ROI 생성
+976,로이 생성해 ,/calibration/update?propertyName=roi&value=create,6,ROI 생성
+977,로이 생성,/calibration/update?propertyName=roi&value=create,6,ROI 생성
+978,로이 만들어줘,/calibration/update?propertyName=roi&value=create,6,ROI 생성
+975,십자선 타입 none 설정,/calibration/update?propertyName=recticletype&value=NONE,6,십자선 타입 변경
+972,십자선 타입 fullsize,/calibration/update?propertyName=recticletype&value=FULLSIZE,6,십자선 타입 변경
+973,보정창 십자선 타입 fullsize,/calibration/update?propertyName=recticletype&value=FULLSIZE,6,십자선 타입 변경
+974,보정창 십자선 풀사이즈로 바꿔줘,/calibration/update?propertyName=recticletype&value=FULLSIZE,6,십자선 타입 변경
+969,십자선 타입 기본으로 바꿔 ,/calibration/update?propertyName=recticletype&value=DEFAULT,6,십자선 타입 변경
+970,십자선 타입 default,/calibration/update?propertyName=recticletype&value=DEFAULT,6,십자선 타입 변경
+971,십자선 타입을 디폴트 설정,/calibration/update?propertyName=recticletype&value=DEFAULT,6,십자선 타입 변경
+966,캘리 카메라 변경해 ,/calibration/update?propertyName=camera&value=SettingX1,6,보정 카메라 변경
+967,calibration 카메라 변경해 ,/calibration/update?propertyName=camera&value=SettingX1,6,보정 카메라 변경
+968,카메라 변경해 ,/calibration/update?propertyName=camera&value=SettingX1,6,보정 카메라 변경
+962,보정 버튼 눌러줘 ,/calibration/update?propertyName=button&value=Test,6,보정 테스트 버튼 클릭
+963,보정 test,/calibration/update?propertyName=button&value=Test,6,보정 테스트 버튼 클릭
+964,보정 test 시작,/calibration/update?propertyName=button&value=Test,6,보정 테스트 버튼 클릭
+965,calibration test,/calibration/update?propertyName=button&value=Test,6,보정 테스트 버튼 클릭
+958,calibration lightsave,/calibration/update?propertyName=button&value=lightsave,6,보정 lightsave 버튼 클릭
+959,LightSave,/calibration/update?propertyName=button&value=lightsave,6,보정 lightsave 버튼 클릭
+960,캘리 라이트세이브,/calibration/update?propertyName=button&value=lightsave,6,보정 lightsave 버튼 클릭
+961,캘리브레이션 라이트세이브,/calibration/update?propertyName=button&value=lightsave,6,보정 lightsave 버튼 클릭

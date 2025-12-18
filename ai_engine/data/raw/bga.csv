@@ -1,0 +1,106 @@
+id ,text,label,index,description
+712,BGA 경로 초기화 ,/teaching/bga/update?propertyName=reset,5,BGA 경로 초기화
+710,BGA 티칭 창 RejectMark 탭 ROI 초기화 ,/teaching/bga/update?propertyName=RejectMarkRoi&value=reset,5,
+711,BGA RejectMark 로이 초기화 ,/teaching/bga/update?propertyName=RejectMarkRoi&value=reset,5,
+708,BGA 티칭 창 RejectMark 탭 ROI 삭제,/teaching/bga/update?propertyName=RejectMarkRoi&value=delete,5,
+709,BGA RejectMark 로이 삭제,/teaching/bga/update?propertyName=RejectMarkRoi&value=delete,5,
+704,BGA 티칭 창 RejectMark 탭 ROI 추가,/teaching/bga/update?propertyName=RejectMarkRoi&value=add,5,
+705,BGA RejectMark 로이 추가,/teaching/bga/update?propertyName=RejectMarkRoi&value=add,5,
+706,BGA RejectMark 로이 생성,/teaching/bga/update?propertyName=RejectMarkRoi&value=add,5,
+707,BGA 티칭 RejectMark ROI 생성,/teaching/bga/update?propertyName=RejectMarkRoi&value=add,5,
+702,BGA 티칭 창 FirstPin/Pattern 탭 ROI 초기화,/teaching/bga/update?propertyName=PatternRois&value=reset,5,
+703,BGA FirstPin/Pattern 로이 초기화,/teaching/bga/update?propertyName=PatternRois&value=reset,5,
+700,BGA 티칭 창 FirstPin/Pattern 탭 ROI 삭제,/teaching/bga/update?propertyName=PatternRois&value=delete,5,
+701,BGA FirstPin/Pattern 로이 삭제,/teaching/bga/update?propertyName=PatternRois&value=delete,5,
+696,BGA 티칭 창 FirstPin/Pattern 탭 ROI 추가,/teaching/bga/update?propertyName=PatternRois&value=add,5,
+697,BGA FirstPin/Pattern 로이 추가,/teaching/bga/update?propertyName=PatternRois&value=add,5,
+698,BGA FirstPin/Pattern 로이 생성,/teaching/bga/update?propertyName=PatternRois&value=add,5,
+699,BGA 티칭 FirstPin/Pattern ROI 생성,/teaching/bga/update?propertyName=PatternRois&value=add,5,
+693,BGA Edge 감지 모드를 Last,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Last,5,
+694,BGA 엣지 감지 모드 Last,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Last,5,
+695,BGA Edge Detect Mode Last,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Last,5,
+690,BGA Edge 감지 모드를 First,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=First,5,
+691,BGA 엣지 감지 모드 First,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=First,5,
+692,BGA Edge Detect Mode First,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=First,5,
+687,BGA Edge 감지 모드를 Best,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Best,5,
+688,BGA 엣지 감지 모드 Best,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Best,5,
+689,BGA Edge Detect Mode Best,/teaching/bga/update?propertyName=PackageEdgeDetectMode&value=Best,5,
+684,BGA Edge 감지 방향을 Vertical,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Vertical,5,
+685,BGA 엣지 감지 방향 Vertical,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Vertical,5,
+686,BGA Edge Detect Direction Vertical,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Vertical,5,
+681,BGA Edge 감지 방향을 Horizontal,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Horizontal,5,
+682,BGA 엣지 감지 방향 Horizontal,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Horizontal,5,
+683,BGA Edge Detect Direction Horizontal,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=Horizontal,5,
+678,BGA Edge 감지 방향을 All,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=All,5,
+679,BGA 엣지 감지 방향 All,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=All,5,
+680,BGA Edge Detect Direction All,/teaching/bga/update?propertyName=PackageEdgeDetectDirection&value=All,5,
+675,BGA Surface 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Surface,5,BGA 티칭 창에서 특정 탭으로 이동
+676,BGA Surface tab,/teaching/bga/update?propertyName=moveTab&value=Surface,5,BGA 티칭 창에서 특정 탭으로 이동
+677,BGA 서페이스 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Surface,5,BGA 티칭 창에서 특정 탭으로 이동
+672,BGA Sawing 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Sawing,5,BGA 티칭 창에서 특정 탭으로 이동
+673,BGA Sawing tab,/teaching/bga/update?propertyName=moveTab&value=Sawing,5,BGA 티칭 창에서 특정 탭으로 이동
+674,BGA 소잉 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Sawing,5,BGA 티칭 창에서 특정 탭으로 이동
+669,BGA Result 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Result,5,BGA 티칭 창에서 특정 탭으로 이동
+670,BGA Result tab,/teaching/bga/update?propertyName=moveTab&value=Result,5,BGA 티칭 창에서 특정 탭으로 이동
+671,BGA 리저트 탭,/teaching/bga/update?propertyName=moveTab&value=Result,5,BGA 티칭 창에서 특정 탭으로 이동
+667,BGA RejectMark 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=RejectMark,5,BGA 티칭 창에서 특정 탭으로 이동
+668,BGA RejectMark tab,/teaching/bga/update?propertyName=moveTab&value=RejectMark,5,BGA 티칭 창에서 특정 탭으로 이동
+664,BGA Package 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Package,5,BGA 티칭 창에서 특정 탭으로 이동
+665,BGA Package tab,/teaching/bga/update?propertyName=moveTab&value=Package,5,BGA 티칭 창에서 특정 탭으로 이동
+666,BGA 패키지 탭,/teaching/bga/update?propertyName=moveTab&value=Package,5,BGA 티칭 창에서 특정 탭으로 이동
+662,BGA FirstPin/Pattern 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=FirstPin/Pattern,5,BGA 티칭 창에서 특정 탭으로 이동
+663,BGA FirstPin/Pattern tab,/teaching/bga/update?propertyName=moveTab&value=FirstPin/Pattern,5,BGA 티칭 창에서 특정 탭으로 이동
+660,BGA DontCare 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=DontCare,5,BGA 티칭 창에서 특정 탭으로 이동
+661,BGA DontCare tab,/teaching/bga/update?propertyName=moveTab&value=DontCare,5,BGA 티칭 창에서 특정 탭으로 이동
+657,BGA Ball 탭으로 이동,/teaching/bga/update?propertyName=moveTab&value=Ball,5,BGA 티칭 창에서 특정 탭으로 이동
+658,BGA Ball tab,/teaching/bga/update?propertyName=moveTab&value=Ball,5,BGA 티칭 창에서 특정 탭으로 이동
+659,BGA 볼 탭,/teaching/bga/update?propertyName=moveTab&value=Ball,5,BGA 티칭 창에서 특정 탭으로 이동
+650,bga Result 탭 Inspection 버튼 클릭,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+651,bga Result 탭 Inspection,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+652,bga Result Inspection 눌러줘,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+653,bga Result Inspection 실행,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+654,bga Result Inspection 시작,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+655,bga 실제 검사 진행,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+656,bga 검사 테스트,/teaching/bga/update?propertyName=inspectTeaching&value=1,5,
+647,BGA 창 inspectSurface 버튼 클릭,/teaching/bga/update?propertyName=inspectSurfaceTeaching&value=1,5,
+648,BGA inspectSurface,/teaching/bga/update?propertyName=inspectSurfaceTeaching&value=1,5,
+649,BGA inspectSurface 시작,/teaching/bga/update?propertyName=inspectSurfaceTeaching&value=1,5,
+639,inspect Sawing 버튼 클릭,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+640,BGA inspect Sawing 버튼 눌러,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+641,BGA inspect Sawing 시작시켜,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+642,BGA inspect Sawing,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+643,BGA Saw Offset 티칭 테스트,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+644,BGA Saw Offset 티칭 테스트 시작,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+645,BGA Sawing 자재의 치수 측정,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+646,BGA Sawing Chipping/Burr 파라미터 검출,/teaching/bga/update?propertyName=inspectSawingTeaching&value=1,5,
+632,bga inspectRejectMark 버튼 클릭,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+633,bga inspectRejectMark,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+634,bga inspectRejectMark 시작,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+635,bga inspectRejectMark 실행,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+636,bga inspectRejectMark 버튼 눌러,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+637,bga RejectMark 검출,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+638,bga RejectMark 티칭 테스트,/teaching/bga/update?propertyName=inspectRejectMarkTeaching&value=1,5,
+629,findBalls 버튼 클릭,/teaching/bga/update?propertyName=findBallsTeaching&value=1,5,
+630,BGA findBalls,/teaching/bga/update?propertyName=findBallsTeaching&value=1,5,
+631,BGA findBalls 시작,/teaching/bga/update?propertyName=findBallsTeaching&value=1,5,
+624,BGA ball 탭에서 Auto ROI 버튼 클릭,/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1,5,
+625,BGA ball 탭 Auto ROI,/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1,5,
+626,BGA ball tab Auto 로이,/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1,5,
+627,BGA 볼탭 Auto 로이,/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1,5,
+628,BGA 볼탭 오토 로이,/teaching/bga/update?propertyName=findBallRoiAutoTeaching&value=1,5,
+622,BGA 티칭 창 DontCare 탭 ROI 초기화 ,/teaching/bga/update?propertyName=DontCareRoi&value=reset,5,
+623,BGA DontCare 로이 초기화 ,/teaching/bga/update?propertyName=DontCareRoi&value=reset,5,
+620,BGA 티칭 창 DontCare 탭 ROI 삭제,/teaching/bga/update?propertyName=DontCareRoi&value=delete,5,
+621,BGA DontCare 로이 삭제,/teaching/bga/update?propertyName=DontCareRoi&value=delete,5,
+616,BGA 티칭 창 DontCare 탭 ROI 추가,/teaching/bga/update?propertyName=DontCareRoi&value=add,5,
+617,BGA DontCare 로이 추가,/teaching/bga/update?propertyName=DontCareRoi&value=add,5,
+618,BGA DontCare 로이 생성,/teaching/bga/update?propertyName=DontCareRoi&value=add,5,
+619,BGA 티칭 DontCare ROI 생성,/teaching/bga/update?propertyName=DontCareRoi&value=add,5,
+614,BGA 티칭 창 Ball 탭 ROI 초기화,/teaching/bga/update?propertyName=BallRoi&value=reset,5,
+615,BGA Ball 로이 초기화,/teaching/bga/update?propertyName=BallRoi&value=reset,5,
+612,BGA 티칭 창 Ball 탭 ROI 삭제,/teaching/bga/update?propertyName=BallRoi&value=delete,5,
+613,BGA Ball 로이 삭제,/teaching/bga/update?propertyName=BallRoi&value=delete,5,
+608,BGA 티칭 창 Ball 탭 ROI 추가,/teaching/bga/update?propertyName=BallRoi&value=add,5,
+609,BGA Ball 로이 추가,/teaching/bga/update?propertyName=BallRoi&value=add,5,
+610,BGA Ball 로이 생성,/teaching/bga/update?propertyName=BallRoi&value=add,5,
+611,BGA 티칭 Ball ROI 생성,/teaching/bga/update?propertyName=BallRoi&value=add,5,

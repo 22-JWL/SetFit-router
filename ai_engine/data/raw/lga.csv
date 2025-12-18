@@ -1,0 +1,157 @@
+id ,text,label,index,description
+875,Surface 임계값을 8-24로 해 주세요,/teaching/lga/update?propertyName=Surface_Threshold&value=8-24,5,Surface 임계값 조절
+874,Surface 임계값 5-27로 바꿔,/teaching/lga/update?propertyName=Surface_Threshold&value=5-27,5,Surface 임계값 5-27 설정
+873,Surface 임계값 3-51,/teaching/lga/update?propertyName=Surface_Threshold&value=3-51,5,Surface 임계값 3~51
+872,Surface 임계값 조정 32-105,/teaching/lga/update?propertyName=Surface_Threshold&value=32-105,5,Surface 임계값 32~105 적용
+871,Surface 임계값을 17-80으로,/teaching/lga/update?propertyName=Surface_Threshold&value=17-80,5,
+870,Surface 임계값을 17-42로,/teaching/lga/update?propertyName=Surface_Threshold&value=17-42,5,Surface 임계값 17~42
+869,Surface 임계값을 12-30으로 맞춤,/teaching/lga/update?propertyName=Surface_Threshold&value=12-30,5,Surface 임계값 조정
+868,Surface 임계값 세팅 12-28,/teaching/lga/update?propertyName=Surface_Threshold&value=12-28,5,Surface 임계값 12~28 세팅
+867,Surface 임계값 10-33,/teaching/lga/update?propertyName=Surface_Threshold&value=10-33,5,
+866,Surface 임계치를 10부터 29로 설정해주세요,/teaching/lga/update?propertyName=Surface_Threshold&value=10-29,5,Surface 임계값 10-29 지정
+860,Surface ROI 초기화,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,Surface ROI 초기화
+861,Surface 영역 리셋,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,
+862,Surface ROI 싹 초기화,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,Surface ROI 전체 초기화
+863,Surface 영역 초기화 부탁드립니다,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,Surface ROI 초기화 요청
+864,Surface ROI 전체 초기화 부탁해요,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,Surface 영역 ROI 초기화
+865,Surface ROI 전면 리셋 부탁해요,/teaching/lga/update?propertyName=Surface_Button&value=reset,5,Surface ROI 초기화 명령
+854,Surface ROI 삭제,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,Surface ROI 삭제
+855,Surface ROI 싹다 삭제해,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,
+856,Surface ROI 제거 요청,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,
+857,Surface 영역 례이 삭제,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,Surface ROI 전체 삭제
+858,Surface ROI 삭제해봐,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,Surface ROI 신속 삭제
+859,Surface 영역을 삭제하려고 해요,/teaching/lga/update?propertyName=Surface_Button&value=delete,5,Surface ROI 삭제 명령
+846,Surface ROI 추가,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface ROI 추가
+847,Surface 부분 추가,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface ROI 추가
+848,Surface ROI를 생성해주세요,/teaching/lga/update?propertyName=Surface_Button&value=add,5,
+849,Surface ROI 새로 추가,/teaching/lga/update?propertyName=Surface_Button&value=add,5,
+850,Surface ROI 추가 요청,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface ROI 새로 생성
+851,Surface 영역 등록 부탁합니다,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface ROI 추가 요청
+852,Surface 영역에 새 ROI 추가 바랍니다,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface 영역 ROI 추가
+853,Surface 영역 새롭게 추가해 주세요,/teaching/lga/update?propertyName=Surface_Button&value=add,5,Surface ROI 추가 요청
+845,Sawing 임계값 9-15,/teaching/lga/update?propertyName=Sawing_Threshold&value=9-15,5,Sawing 임계값 9~15 입력
+844,Sawing 임계값 80-120,/teaching/lga/update?propertyName=Sawing_Threshold&value=80-120,5,Sawing 임계값 80~120
+843,Sawing 임계값 7-18로 바꿨어요,/teaching/lga/update?propertyName=Sawing_Threshold&value=7-18,5,Sawing 임계값 변경
+842,Sawing 임계값 7-17로 변경 요청합니다,/teaching/lga/update?propertyName=Sawing_Threshold&value=7-17,5,Sawing 임계값 7-17 변경
+841,Sawing 임계값 70-110으로 변경,/teaching/lga/update?propertyName=Sawing_Threshold&value=70-110,5,Sawing 임계값 변경
+840,Sawing 임계값 6-12로 수정해 주세요,/teaching/lga/update?propertyName=Sawing_Threshold&value=6-12,5,Sawing 임계값 변경
+839,Sawing 임계값을 60-111로,/teaching/lga/update?propertyName=Sawing_Threshold&value=60-111,5,
+838,Sawing 임계값을 5-8로,/teaching/lga/update?propertyName=Sawing_Threshold&value=5-8,5,Sawing 임계값 5-8 적용
+837,Sawing 임계값을 55에서 75로 설정해 주십시오,/teaching/lga/update?propertyName=Sawing_Threshold&value=55-75,5,Sawing 임계값 55-75 설정
+836,Sawing 임계값 51-97로 입력,/teaching/lga/update?propertyName=Sawing_Threshold&value=51-97,5,Sawing 임계값 51~97로 지정
+835,Sawing 임계값을 45-80으로 적용,/teaching/lga/update?propertyName=Sawing_Threshold&value=45-80,5,Sawing 임계값 45-80 변화
+834,Sawing 임계값변경 4-22,/teaching/lga/update?propertyName=Sawing_Threshold&value=4-22,5,Sawing 임계값 4~22
+833,Sawing 임계값 3-15,/teaching/lga/update?propertyName=Sawing_Threshold&value=3-15,5,
+832,Sawing 임계값을 30부터 85까지로 변경해주세요,/teaching/lga/update?propertyName=Sawing_Threshold&value=30-85,5,Sawing 임계값 세팅
+831,RejectMark 임계값 99-205,/teaching/lga/update?propertyName=RejectMark_Threshold&value=99-205,5,RejectMark 임계값 99-205
+830,RejectMark 임계값 90-200 추천,/teaching/lga/update?propertyName=RejectMark_Threshold&value=90-200,5,RejectMark 임계값 추천
+829,RejectMark 임계값 85에서 190으로 조절해 주세요,/teaching/lga/update?propertyName=RejectMark_Threshold&value=85-190,5,RejectMark 임계값 85-190 조절
+828,RejectMark 임계값을 80-190으로 맞춰주세요,/teaching/lga/update?propertyName=RejectMark_Threshold&value=80-190,5,RejectMark 임계값 맞춤
+827,RejectMark 임계값 62-108,/teaching/lga/update?propertyName=RejectMark_Threshold&value=62-108,5,RejectMark 임계값 62~108 입력
+826,RejectMark 임계값 58-112,/teaching/lga/update?propertyName=RejectMark_Threshold&value=58-112,5,RejectMark 임계값 58~112로 변경
+825,RejectMark 임계값 40-100으로,/teaching/lga/update?propertyName=RejectMark_Threshold&value=40-100,5,RejectMark 임계값 변경
+824,RejectMark 임계값 33-101,/teaching/lga/update?propertyName=RejectMark_Threshold&value=33-101,5,RejectMark 임계값 33~101
+823,RejectMark 임계값을 30에서 106으로 조정 부탁드립니다,/teaching/lga/update?propertyName=RejectMark_Threshold&value=30-106,5,RejectMark 임계값 30-106 조정
+822,RejectMark 임계값 25-90으로 맞춰 주세요,/teaching/lga/update?propertyName=RejectMark_Threshold&value=25-90,5,RejectMark 임계값 수정
+821,RejectMark 임계값 25-77,/teaching/lga/update?propertyName=RejectMark_Threshold&value=25-77,5,
+820,RejectMark 임계값 15-89,/teaching/lga/update?propertyName=RejectMark_Threshold&value=15-89,5,
+819,RejectMark 임계값 120-200,/teaching/lga/update?propertyName=RejectMark_Threshold&value=120-200,5,RejectMark 임계값 120~200
+818,Pads 임계값 5에서 25로 변경해 주세요,/teaching/lga/update?propertyName=Pads_Threshold&value=5-25,5,Pads 임계값 변경
+817,Pads 임계값 40-60,/teaching/lga/update?propertyName=Pads_Threshold&value=40-60,5,
+816,Pads 임계값 35-70으로 업데이트,/teaching/lga/update?propertyName=Pads_Threshold&value=35-70,5,Pads 임계값 업데이트
+815,Pads 임계값 33-77로,/teaching/lga/update?propertyName=Pads_Threshold&value=33-77,5,Pads 임계값 33-77 지정
+813,Pads 임계값 25-60으로 조정,/teaching/lga/update?propertyName=Pads_Threshold&value=25-60,5,Pads 임계값 25-60 변경
+814,Pads 임계값 25에서 60 사이로 맞춰 주세요,/teaching/lga/update?propertyName=Pads_Threshold&value=25-60,5,Pads 임계값 25-60 맞춤
+812,Pads 임계값 바꿔 23-80,/teaching/lga/update?propertyName=Pads_Threshold&value=23-80,5,Pads 임계값 23~80로 변경
+811,LGA 임계값 2-33 설정 ,/teaching/lga/update?propertyName=Pads_Threshold&value=2-33,5,LGA Pads 임계값 변경
+810,Pads 임계값 재설정 22-38,/teaching/lga/update?propertyName=Pads_Threshold&value=22-38,5,Pads 임계값 22~38 변경
+809,Pads 탭 임계값 21-31,/teaching/lga/update?propertyName=Pads_Threshold&value=21-31,5,
+808,Pads 임계값을 20-60으로,/teaching/lga/update?propertyName=Pads_Threshold&value=20-60,5,Pads 임계값 20-60 설정
+807,Pads 임계값 20-55로 조절 바랍니다,/teaching/lga/update?propertyName=Pads_Threshold&value=20-55,5,Pads 임계값 재조정
+806,Pads 임계값 16-30,/teaching/lga/update?propertyName=Pads_Threshold&value=16-30,5,
+805,Pads 임계값 15-55,/teaching/lga/update?propertyName=Pads_Threshold&value=15-55,5,Pads 임계값 15~55로 설정
+804,Pads 임계값을 13-48로,/teaching/lga/update?propertyName=Pads_Threshold&value=13-48,5,Pads 임계값 13~48 설정
+803,Pads 임계값 12에서 48로 바꿔야 해요,/teaching/lga/update?propertyName=Pads_Threshold&value=12-48,5,Pads 임계값 12-48 설정
+802,Pads 임계값 10-50으로 지정,/teaching/lga/update?propertyName=Pads_Threshold&value=10-50,5,Pads 임계값 10-50 설정
+801,Pads 임계값 10-40으로 설정,/teaching/lga/update?propertyName=Pads_Threshold&value=10-40,5,Pads 임계값 설정 10-40
+793,Pads ROI 초기화,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads ROI 초기화
+794,패드 ROI 재설정,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,
+795,Pads ROI 값 초기화 진행,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads ROI 값 모두 초기화
+796,Pads ROI 전체 해제,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads ROI 전체값 해제
+797,Pads ROI 리스트 갱신,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads ROI 리스트 새로고침
+798,Pads 롤을 초기화 하고 싶어요,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads ROI 초기화 실행
+799,Pads ROI 모두 지워주세요,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads 영역 ROI 초기화
+800,Pads 영역 모두 지워 주세요,/teaching/lga/update?propertyName=Pads_Button&value=reset,5,Pads 탭의 모든 ROI 초기화
+790,Pads ROI 삭제,/teaching/lga/update?propertyName=Pads_Button&value=delete,5,Pads ROI 삭제
+791,Pads ROI 삭제해주시기 바랍니다,/teaching/lga/update?propertyName=Pads_Button&value=delete,5,
+792,Pads 영역을 제거해 주세요,/teaching/lga/update?propertyName=Pads_Button&value=delete,5,Pads 영역 ROI 삭제
+780,LGA 티칭 부분 설정 ,/teaching/lga/update?propertyName=Pads_Button&value=add,5,LGA Pads ROI 추가
+781,Pads ROI 추가,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads ROI 추가
+782,Pads 로이 생성해,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads ROI 추가
+783,Pads ROI 전부 등록,/teaching/lga/update?propertyName=Pads_Button&value=add,5,
+784,Pads ROI를 증가시켜줘,/teaching/lga/update?propertyName=Pads_Button&value=add,5,
+785,Pads ROI 전체 신규 생성,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads 탭 례이 새로 추가됨
+786,Pads ROI 카운트 변경,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads 탭 례이 개수 증가
+787,Pads 례이 새로 추가되었습니다,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads 탭에서 ROI가 추가됨
+788,Pads 영역 ROI 추가해주시겠어요?,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads 탭 ROI 새로 추가
+789,Pads 영역 새로 추가해 주세요,/teaching/lga/update?propertyName=Pads_Button&value=add,5,Pads 탭에 새로운 ROI 추가
+779,Package 임계값 9-19,/teaching/lga/update?propertyName=Package_Threshold&value=9-19,5,Package 임계값 9~19 지정
+778,Package 임계값을 5-20으로,/teaching/lga/update?propertyName=Package_Threshold&value=5-20,5,Package 임계값 5~20 세팅
+777,Package 임계값 5부터 16까지 바꿔 주세요,/teaching/lga/update?propertyName=Package_Threshold&value=5-16,5,Package 임계값 5-16 설정
+776,Package 임계값 2-17,/teaching/lga/update?propertyName=Package_Threshold&value=2-17,5,
+775,Package 임계값 1-15로 세팅,/teaching/lga/update?propertyName=Package_Threshold&value=1-15,5,Package 임계값 설정
+774,Package 임계값을 1-14로 조정해 주세요,/teaching/lga/update?propertyName=Package_Threshold&value=1-14,5,Package 임계값 변경
+773,Package 임계값 1-10,/teaching/lga/update?propertyName=Package_Threshold&value=1-10,5,Package 임계값 1-10 설정
+772,Leads 임계값 8-26 범위로 지정해 주세요,/teaching/lga/update?propertyName=Leads_Threshold&value=8-26,5,Leads 임계값 8-26 지정
+771,Leads 임계값측정 7-41,/teaching/lga/update?propertyName=Leads_Threshold&value=7-41,5,Leads 임계값 7~41 적용
+770,Leads 임계값 범위 6-33 적용,/teaching/lga/update?propertyName=Leads_Threshold&value=6-33,5,Leads 임계값 6~33 적용
+769,Leads 임계값 5-37,/teaching/lga/update?propertyName=Leads_Threshold&value=5-37,5,
+768,Leads 임계값을 5-27로 바꿔주세요,/teaching/lga/update?propertyName=Leads_Threshold&value=5-27,5,Leads 임계값 조정
+767,Leads 임계값 4부터 30으로 조정 부탁드립니다,/teaching/lga/update?propertyName=Leads_Threshold&value=4-30,5,Leads 임계값 4-30 변경
+766,Leads 임계값 4-29,/teaching/lga/update?propertyName=Leads_Threshold&value=4-29,5,
+765,Leads 임계값 3-20으로 적용,/teaching/lga/update?propertyName=Leads_Threshold&value=3-20,5,Leads 임계값 3-20 설정
+764,Leads 임계값 2-23,/teaching/lga/update?propertyName=Leads_Threshold&value=2-23,5,Leads 임계값 2-23
+763,Leads 임계값 15-47,/teaching/lga/update?propertyName=Leads_Threshold&value=15-47,5,Leads 임계값 15-47
+762,Leads 임계치 14-36,/teaching/lga/update?propertyName=Leads_Threshold&value=14-36,5,Leads 임계값 14~36
+761,Leads 임계값 11-29로,/teaching/lga/update?propertyName=Leads_Threshold&value=11-29,5,Leads 임계값 11~29 지정
+759,Leads 임계값 10-35으로 조정,/teaching/lga/update?propertyName=Leads_Threshold&value=10-35,5,Leads 임계값 조정
+760,Leads 임계값 범위 10-35로 바꿔 주세요,/teaching/lga/update?propertyName=Leads_Threshold&value=10-35,5,Leads 임계값 수정
+754,Leads ROI 초기화,/teaching/lga/update?propertyName=Leads_Button&value=reset,5,Leads ROI 초기화
+755,Leads ROI 전부 reset,/teaching/lga/update?propertyName=Leads_Button&value=reset,5,
+756,Leads ROI 모두 다 비워줘,/teaching/lga/update?propertyName=Leads_Button&value=reset,5,
+757,Leads ROI 일괄 리셋,/teaching/lga/update?propertyName=Leads_Button&value=reset,5,모든 Leads ROI 초기화
+758,Leads 영역 초기화 했습니다,/teaching/lga/update?propertyName=Leads_Button&value=reset,5,Leads ROI 초기화
+746,Leads ROI 삭제,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads ROI 삭제
+747,Leads 영역 모두 삭제,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads ROI 삭제
+748,Leads ROI를 제거하세요,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,
+749,Leads ROI 전체 제거,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads 영역 례이 전체 삭제
+750,Leads ROI 항목 지우기,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads ROI 항목 일괄 삭제
+751,Leads 영역 전체 삭제할게요,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads ROI 삭제 명령
+752,Leads 영역 ROI 삭제 부탁드립니다,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads 영역 ROI 삭제
+753,Leads ROI를 삭제해 주시겠어요?,/teaching/lga/update?propertyName=Leads_Button&value=delete,5,Leads 탭 ROI 삭제명령
+738,Leads ROI 추가,/teaching/lga/update?propertyName=Leads_Button&value=add,5,Leads ROI 추가
+739,Leads ROI 전체 생성을 해줘,/teaching/lga/update?propertyName=Leads_Button&value=add,5,
+740,Leads ROI 다 생성,/teaching/lga/update?propertyName=Leads_Button&value=add,5,
+741,Leads ROI 신규 만들기,/teaching/lga/update?propertyName=Leads_Button&value=add,5,Leads 탭에 새 ROI 등록
+742,Leads ROI 전부 추가,/teaching/lga/update?propertyName=Leads_Button&value=add,5,Leads ROI 전체 추가
+743,Leads 영역 추가해 주시겠어요?,/teaching/lga/update?propertyName=Leads_Button&value=add,5,Leads ROI 추가 요청
+744,Leads ROI 다시 생성해 주세요,/teaching/lga/update?propertyName=Leads_Button&value=add,5,Leads 영역 ROI 새로 생성
+745,Leads 영역 신규 생성 바랍니다,/teaching/lga/update?propertyName=Leads_Button&value=add,5,신규 Leads ROI 추가
+728,DontCare ROI 초기화,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 초기화
+729,DontCare 전체 초기화,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 초기화
+730,DontCare ROI 완전초기화,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,
+731,DontCare ROI 영역 비움,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,
+732,DontCare 영역 리셋,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare 전부 초기화
+733,DontCare ROI 새로고침,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 전부 초기화
+734,DontCare ROI 새로 시작,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 전체 리셋
+735,DontCare 영역 리셋 할게요,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 초기화
+736,DontCare ROI 완전 리셋해주세요,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare 영역 ROI 초기화
+737,DontCare 영역 전부 초기화 부탁,/teaching/lga/update?propertyName=DontCare_Button&value=reset,5,DontCare ROI 초기화 명령
+724,DontCare ROI 삭제,/teaching/lga/update?propertyName=DontCare_Button&value=delete,5,DontCare ROI 삭제
+725,DontCare 영역 삭제해 주세요,/teaching/lga/update?propertyName=DontCare_Button&value=delete,5,DontCare ROI 삭제 명령
+726,DontCare 영역 ROI 삭제 요청,/teaching/lga/update?propertyName=DontCare_Button&value=delete,5,DontCare ROI 삭제
+727,DontCare ROI 모두 삭제해 주세요,/teaching/lga/update?propertyName=DontCare_Button&value=delete,5,DontCare 탭 ROI 삭제
+720,DontCare ROI 추가,/teaching/lga/update?propertyName=DontCare_Button&value=add,5,DontCare ROI 추가
+721,DontCare ROI 추가 바람,/teaching/lga/update?propertyName=DontCare_Button&value=add,5,
+722,DontCare ROI 추가 실행,/teaching/lga/update?propertyName=DontCare_Button&value=add,5,DontCare ROI 추가 명령
+723,DontCare 영역 신규 추가 부탁,/teaching/lga/update?propertyName=DontCare_Button&value=add,5,DontCare ROI 추가 요청
