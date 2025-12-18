@@ -32,7 +32,7 @@ MC_SAMPLES = 20
 
 # 불확실성 임계값 (0.0 ~ 1.0)
 # 일치율이 이 값보다 낮으면 불확실하다고 판단
-CONFIDENCE_THRESHOLD = 0.8
+CONFIDENCE_THRESHOLD = 0.65
 
 # === 의도(Intent) 정의 ===
 # 0, 1: SetFit(Router) 처리, 2: SLLM 처리, 3: OOS

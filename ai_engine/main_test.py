@@ -54,6 +54,7 @@ def main():
     settings_data = load_csv_data(os.path.join(base_data_path, "settings.csv"))
     strip_data = load_csv_data(os.path.join(base_data_path, "strip.csv"))
     # vague_data = load_csv_data(os.path.join(base_data_path, "vague.csv"))
+    test100_data = load_csv_data(os.path.join(base_data_path, "TestData100.csv"))
 
 
 
@@ -61,35 +62,24 @@ def main():
 
     # single_data = load_csv_data(single_csv_path)
     # composite_data = load_csv_data(composite_csv_path)
-    synthesize_data = (
-        bga_data + calibration_data + common_data + confirm_log_data +
-        history_data + lga_data + light_data + mapping_data +
-        qfn_data + settings_data + strip_data
-    )
+    # synthesize_data = (
+    #     bga_data + calibration_data + common_data + confirm_log_data +
+    #     history_data + lga_data + light_data + mapping_data +
+    #     qfn_data + settings_data + strip_data
+    # )
     
 
-    test_queries = [# 단순 (Router 예상)
-        "오늘 날씨 어때?",  # OOS (Router가 OOS 혹은 불확실로 잡음)
-        "미국 대통령이 누구야?",
-        "할 수 있는게 뭐야?",
-        "가장 맛있는 과자는?",
-        "오늘의 기온은?",
-        "오징어 먹고싶다",
-        "점심 뭐 먹을까?",
-        "잠을 잘 자는 법?",
-        "커피 빨러 갈까?",
-        "심심해",
-        "히스토리 창 열어"
+    test_queries = [# 단순 (Router 예상) # OOS (Router가 OOS 혹은 불확실로 잡음)
     ]
 
     # test_queries += single_data
     # test_queries += composite_data
-    test_queries += synthesize_data
+    test_queries += test100_data
 
 
 
     print(f"\n>>> 총 테스트할 문장 개수: {len(test_queries)}")
-    print(f">>> composite 데이터 샘플 확인 (마지막 3개): {test_queries[-3:]}")
+    #print(f">>> composite 데이터 샘플 확인 (마지막 3개): {test_queries[-3:]}")
 
     print("\n>>> Starting Test Loop\n")
     for q in test_queries:

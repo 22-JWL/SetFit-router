@@ -15,7 +15,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import settings
 
 
-AMPLIFICATION_FACTOR = 20  # 데이터를 20배로 뻥튀기
+AMPLIFICATION_FACTOR = 30  # 데이터를 30배로 뻥튀기
 
 
 def load_csv_data(file_path, label_id):
@@ -115,6 +115,7 @@ def main():
     confirmlog_csv_path = os.path.join(base_data_path, "confirmlog.csv")
     calibration_csv_path = os.path.join(base_data_path, "calibration.csv")
     # vague_csv_path = os.path.join(base_data_path, "vague.csv")
+    oos_csv_path = os.path.join(base_data_path, "oos.csv")
 
 
     raw_data = []
@@ -135,23 +136,13 @@ def main():
     settings_data = load_csv_data(settings_csv_path, 9)     # Label 9
     strip_data = load_csv_data(strip_csv_path, 10)     # Label 10
     # vague_data = load_csv_data(vague_csv_path, 11)     # Label 11
-
+    oos_data = load_csv_data(oos_csv_path, 12)     # Label 12
 
 # === 3. 부족한 라벨 보강 (Label 1 & 기본 데이터) ===
     # CSV에 없는 Label 1(절차)이나 기본 패턴이 부족할 수 있으므로 최소한의 데이터를 하드코딩으로 추가
     basic_data = [
         # Label : 절차/가이드 (CSV가 없으므로 수동 추가 필요)
         # Label 12: OOS (기본 시드 데이터)
-        ("오늘 날씨 어때?", 12),
-        ("미국 대통령이 누구야?", 12),
-        ("할 수 있는게 뭐야?", 12),
-        ("가장 맛있는 과자는?", 12),
-        ("오늘의 기온은?", 12),
-        ("오징어 먹고싶다", 12),
-        ("점심 뭐 먹을까?", 12),
-        ("잠을 잘 자는 법?", 12),
-        ("커피 빨러 갈까?", 12),
-        ("심심해", 12),
     ]
 
     raw_data += (bga_data * AMPLIFICATION_FACTOR)
@@ -166,7 +157,8 @@ def main():
     raw_data += (strip_data * AMPLIFICATION_FACTOR)
     raw_data += (common_data * AMPLIFICATION_FACTOR)
     # raw_data += (vague_data * AMPLIFICATION_FACTOR)
-    raw_data += (basic_data * 10) # 기본 데이터도 증폭
+    raw_data += (oos_data * AMPLIFICATION_FACTOR)
+    #raw_data += (basic_data * 10) # 기본 데이터도 증폭
 
     print(f">>> Total examples after amplification: {len(raw_data)}")
 
