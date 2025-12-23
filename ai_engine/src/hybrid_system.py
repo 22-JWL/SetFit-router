@@ -71,7 +71,7 @@ class HybridSystem:
         # ============================================================
         # Case 1: OUT_OF_SCOPE (라벨 12) - 도메인 밖 질문 즉시 거절
         # ============================================================
-        if label_id == 12:
+        if label_id == 13:
             source = "Router (Blocked OOS)"
             print(f"🛑 Blocked OOS query... ({source})")
             final_response = {
@@ -83,11 +83,18 @@ class HybridSystem:
         # Case 2: vague (라벨 11) - 애매모호한 질문 -> SLLM으로 명확화 요청
         # ============================================================
         elif label_id == 11:
-            source = "SLLM (Reason: Vague Query)"
+            source = "SLLM (Reason: VagueWindow Query)"
             print(f"🤔 Vague query detected... ({source})")
             final_response = {
-                "answer": "질문이 명확하지 않습니다. 좀 더 구체적으로 질문해 주시겠어요?",
-                "intent": "VAGUE"
+                "answer": "창 질문이 명확하지 않습니다. 좀 더 구체적으로 질문해 주시겠어요?",
+                "intent": "VAGUE_WINDOW"
+            }
+        elif label_id == 12:
+            source = "SLLM (Reason: VagueValue Query)"
+            print(f"🤔 Vague query detected... ({source})")
+            final_response = {
+                "answer": "값 질문이 명확하지 않습니다. 좀 더 구체적으로 질문해 주시겠어요?",
+                "intent": "VAGUE_VALUE"
             }
 
         # ============================================================
