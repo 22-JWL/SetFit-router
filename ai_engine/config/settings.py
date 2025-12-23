@@ -18,7 +18,11 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # === 모델 설정 ===
 # 1. Router: 논문에서 사용한 MPNet (SetFit 백본) 
-ROUTER_BASE_MODEL = "snunlp/KR-SBERT-V40K-klueNLI-augSTS"
+# BAAI/bge-m3
+# snunlp/KR-SBERT-V40K-klueNLI-augSTS
+# nlpai-lab/KURE-v1
+# BAAI/bge-m3
+ROUTER_BASE_MODEL = "nlpai-lab/KURE-v1"
 
 # SLLM 모델
 # 실제 파인튜닝된 경로가 있다면 그 경로를 입력

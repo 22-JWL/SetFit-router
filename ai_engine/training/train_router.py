@@ -188,6 +188,11 @@ def main():
         head_params={"out_features": len(settings.ID2LABEL)}
     )
 
+    # 입력 길이 제한 (속도 최적화 핵심)
+    # 8192 토큰 모델이라도 512로 제한하면 추론 속도가 빨라진다.
+    model.model_body.max_seq_length = 512 
+    print(f">>> Max Sequence Length set to: {model.model_body.max_seq_length}")
+
     # 4. 모델을 GPU로 이동
     model.to(settings.DEVICE)
 
