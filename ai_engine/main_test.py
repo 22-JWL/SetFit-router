@@ -54,8 +54,8 @@ def main():
     settings_data = load_csv_data(os.path.join(base_data_path, "settings.csv"))
     strip_data = load_csv_data(os.path.join(base_data_path, "strip.csv"))
     # vague_data = load_csv_data(os.path.join(base_data_path, "vague.csv"))
-    # test100_data = load_csv_data(os.path.join(base_data_path, "TestData100.csv"))
-    vg_data = load_csv_data(os.path.join(base_data_path, "vg.csv"))
+    test100_data = load_csv_data(os.path.join(base_data_path, "TestData100.csv"))
+    # vg_data = load_csv_data(os.path.join(base_data_path, "vg.csv"))
 
 
 
@@ -75,8 +75,8 @@ def main():
 
     # test_queries += single_data
     # test_queries += composite_data
-    #test_queries += test100_data
-    test_queries += vg_data
+    test_queries += test100_data
+    # test_queries += vg_data
 
 
 
