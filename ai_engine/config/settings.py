@@ -52,7 +52,8 @@ ID2LABEL = {
     8: "QFN_QUESTION",   # QFN 질문
     9: "Settings_QUESTION",   # Settings 질문
     10: "Strip_QUESTION",   # Strip 질문
-    11: "vague", # 애매모호한 질문
-    12: "OUT_OF_SCOPE" # 도메인 밖
+    11: "vagueWindow", # 애매모호한 질문
+    12: "vagueValue",
+    13: "OUT_OF_SCOPE" # 도메인 밖
 }
 LABEL2ID = {v: k for k, v in ID2LABEL.items()}

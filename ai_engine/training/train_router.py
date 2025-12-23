@@ -114,7 +114,8 @@ def main():
     common_csv_path = os.path.join(base_data_path, "common_prompt.csv")
     confirmlog_csv_path = os.path.join(base_data_path, "confirmlog.csv")
     calibration_csv_path = os.path.join(base_data_path, "calibration.csv")
-    vague_csv_path = os.path.join(base_data_path, "vague.csv")
+    vagueWindow_csv_path = os.path.join(base_data_path, "vagueWindow.csv")
+    vagueValue_csv_path = os.path.join(base_data_path, "vagueValue.csv")
     oos_csv_path = os.path.join(base_data_path, "oos.csv")
 
 
@@ -135,8 +136,9 @@ def main():
     qfn_data = load_csv_data(qfn_csv_path, 8)     # Label 8
     settings_data = load_csv_data(settings_csv_path, 9)     # Label 9
     strip_data = load_csv_data(strip_csv_path, 10)     # Label 10
-    vague_data = load_csv_data(vague_csv_path, 11)     # Label 11
-    oos_data = load_csv_data(oos_csv_path, 12)     # Label 12
+    vagueWindow_data = load_csv_data(vagueWindow_csv_path, 11)     # Label 11
+    vagueValue_data = load_csv_data(vagueValue_csv_path, 12)     # Label 12
+    oos_data = load_csv_data(oos_csv_path, 13)     # Label 13
 
 # === 3. 부족한 라벨 보강 (Label 1 & 기본 데이터) ===
     # CSV에 없는 Label 1(절차)이나 기본 패턴이 부족할 수 있으므로 최소한의 데이터를 하드코딩으로 추가
@@ -156,7 +158,8 @@ def main():
     raw_data += (settings_data * AMPLIFICATION_FACTOR)
     raw_data += (strip_data * AMPLIFICATION_FACTOR)
     raw_data += (common_data * AMPLIFICATION_FACTOR)
-    raw_data += (vague_data * AMPLIFICATION_FACTOR)
+    raw_data += (vagueWindow_data * AMPLIFICATION_FACTOR)
+    raw_data += (vagueValue_data * AMPLIFICATION_FACTOR)
     raw_data += (oos_data * AMPLIFICATION_FACTOR)
     #raw_data += (basic_data * 10) # 기본 데이터도 증폭
 
